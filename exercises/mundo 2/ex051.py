@@ -1,10 +1,10 @@
 quantidade_numeros = 0
 maior_numero = 0
 menor_numero = 0
-resposta = 'S'
+resposta = 's'
 soma = 0
 
-while resposta == 'S':
+while resposta == 's':
     numero = int(input('Escreva um número inteiro qualquer: '))
     quantidade_numeros += 1
     soma += numero

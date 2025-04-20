@@ -8,6 +8,5 @@ for num in range(1, 6):
     elif peso < menor: 
         menor = peso
 
-print(' ')
 print(f'O maior peso lido foi {maior}kg.')
 print(f'O menor peso lido foi {menor}kg.')

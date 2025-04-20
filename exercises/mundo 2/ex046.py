@@ -1,5 +1,4 @@
 from random import randint
-from time import sleep
 
 print('Vamos jogar? Eu vou pensar em um número de 1 a 10 e você tenta adivinhar!!')
 jogouser = 0

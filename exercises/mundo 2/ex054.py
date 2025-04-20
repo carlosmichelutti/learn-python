@@ -8,7 +8,7 @@ soma = 0
 
 while not resposta == 'N':
     nome = str(input('Qual o nome do produto? '))
-    valor = float(input('Qual o valor do produto? R$ '))
+    valor = float(input('Qual o valor do produto? R$'))
     quantidade_de_produtos += 1
     soma += valor
 
