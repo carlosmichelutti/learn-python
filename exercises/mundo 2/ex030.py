@@ -1,9 +1,9 @@
 from datetime import datetime
 
 year = datetime.today().year
-sexo = str(input('Digite o seu gênero [Masculino/Feminino]: ')).upper()
+sexo = str(input('Digite o seu gênero [M/F]: ')).upper()
 
-if sexo == 'FEMININO':
+if sexo == 'F':
     print('Você não é obrigada a se alistar no exercito. Até mais!')
 else:
     ano_nascimento = int(input('Em que ano você nasceu? '))

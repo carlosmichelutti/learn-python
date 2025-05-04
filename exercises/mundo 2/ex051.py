@@ -1,10 +1,10 @@
 quantidade_numeros = 0
 maior_numero = 0
 menor_numero = 0
-resposta = 's'
+resposta = 'S'
 soma = 0
 
-while resposta == 's':
+while resposta == 'S':
     numero = int(input('Escreva um número inteiro qualquer: '))
     quantidade_numeros += 1
     soma += numero
@@ -17,11 +17,11 @@ while resposta == 's':
     elif numero < menor_numero:
         menor_numero = numero
 
-    resposta =  str(input('Quer continuar? [s/n] ')).lower().strip()
+    resposta =  str(input('Quer continuar? [S/N] ')).upper().strip()
     while True:
-        if resposta not in 'sn':
+        if resposta not in 'SN':
             print('Opção inválida! Tente novamente!')
-            resposta = str(input('Quer continuar? [s/n] ')).lower().strip()
+            resposta = str(input('Quer continuar? [S/N] ')).upper().strip()
             continue
         break
 

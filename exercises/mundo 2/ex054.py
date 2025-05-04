@@ -16,9 +16,10 @@ while not resposta == 'N':
         quantidade_maior_que_1000 += 1
 
     if quantidade_de_produtos == 1:
-        menor = valor
+        menor_nome = nome
+        menor_valor = valor
 
-    if valor < menor:
+    if valor < menor_valor:
         menor_nome = nome
         menor_valor = valor
 

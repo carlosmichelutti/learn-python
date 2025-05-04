@@ -7,14 +7,14 @@ menor_idade = 0
 maior_idade = 0
 
 for c in range (1, 5):
-    sexo = str(input('Qual é o seu sexo? [Masculino/Feminino]? ')).lower().strip()
-    nome = str(input('Qual é o seu nome? ')).lower().strip()
+    sexo = str(input('Qual é o seu sexo? [M/F]? ')).upper().strip()
+    nome = str(input('Qual é o seu nome? ')).capitalize().strip()
     idade = int(input(f'Quantos anos você tem {nome}? '))
     os.system('cls')
-    if sexo == 'feminino':
+    if sexo == 'F':
         quantidade_de_mulheres += 1
 
-    if sexo == 'masculino' and idade > maior_idade:
+    if sexo == 'M' and idade > maior_idade:
         maior_idade = idade
         homem_maior_idade = nome
 
