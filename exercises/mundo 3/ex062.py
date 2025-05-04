@@ -20,7 +20,6 @@ while True:
         print(f'A lista normal digitada foi essa: {lista_simples}.')
         print(f'A lista dos números ímpares foi essa: {lista_impares}.')
         print(f'A lista dos números pares foi essa: {lista_pares}.')
-        print('Encerrando...')
         break
 
     elif resposta != 'S':

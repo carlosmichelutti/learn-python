@@ -7,8 +7,8 @@ menor = []
 cont= 0
 
 while True:
-    nome = str(input('ESCREVA O NOME: '))
-    peso = float(input('ESCREVA O PESO: '))
+    nome = str(input('Escreva o nome: '))
+    peso = float(input('Escreva o peso: '))
     auxiliar.append(nome)
     auxiliar.append(peso)
     grupo.append(auxiliar[:])

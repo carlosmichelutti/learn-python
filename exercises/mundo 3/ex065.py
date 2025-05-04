@@ -2,7 +2,7 @@ numeros = [[],[]]
 valor = 0
 
 for c in range(1,8):
-    valor = int(input('DIGITE UM VALOR: '))
+    valor = int(input('Digite um valor: '))
     if valor % 2 == 0:
         numeros[0].append(valor)
     else:

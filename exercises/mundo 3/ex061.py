@@ -11,7 +11,6 @@ while True:
         print(f'Foram digitados {quantidade_numeros} números.')
         lista.sort(reverse=True)
         print(f'A lista em ordem decrescente é igual a {lista}.')
-        print('Encerrando...')
         break
 
     elif resposta != 'S':

@@ -1,8 +1,8 @@
 numeros = (
-    int(input('Escreva um número:  ')), 
-    int(input('Escreva um número:  ')), 
-    int(input('Escreva um número:  ')), 
-    int(input('Escreva um número:  '))
+    int(input('Escreva um número: ')), 
+    int(input('Escreva um número: ')), 
+    int(input('Escreva um número: ')), 
+    int(input('Escreva um número: '))
 )
 
 print(f'O número 9 apareceu {numeros.count(9)} vezes.')

@@ -14,5 +14,5 @@ for c in range(0, quantidade_jogos):
         if len(jogo) >= 6:
             break
 
-    print(f'JOGO Nº{c+1}: {jogo}.')
+    print(f'Jogo Nº{c+1}: {jogo}.')
     sleep(1)
