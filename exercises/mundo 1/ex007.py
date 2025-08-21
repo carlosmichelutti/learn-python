@@ -1,5 +1,6 @@
 comprimento = float(input('Digite o comprimento da parede: '))
 largura = float(input('Digite a largura da parede: '))
+
 area = comprimento * largura
 tinta_necessaria = area / 2
 

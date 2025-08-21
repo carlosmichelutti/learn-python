@@ -1,4 +1,5 @@
-frase = str(input('Escreva uma frase: ')).strip()
+frase = str(input('Digite uma frase: ')).strip()
+
 frase_maiuscula = frase.upper()
 quantidade_a = frase_maiuscula.count('A')
 primeiro_a = frase_maiuscula.find('A')

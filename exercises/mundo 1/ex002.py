@@ -1,5 +1,6 @@
-numero1 = int(input('Escreva um número: '))
-numero2 = int(input('Escreva outro número: '))
+numero1 = int(input('Digite um número: '))
+numero2 = int(input('Digite outro número: '))
+
 soma = numero1 + numero2
 subtracao = numero1 - numero2
 multiplicacao = numero1 * numero2

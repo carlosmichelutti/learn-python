@@ -1,4 +1,5 @@
 carteira = float(input('Quanto de dinheiro você tem na sua carteira? R$'))
+
 dolares = carteira / 5.21
 euros = carteira / 5.67
 ienes =  carteira * 25.01

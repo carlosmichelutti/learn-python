@@ -1,5 +1,6 @@
-nome = str(input('Escreva seu nome: '))
-salario = float(input(f'{nome} escreva o seu salário atual em R$'))
+nome = str(input('Digite seu nome: '))
+
+salario = float(input(f'{nome} digite o seu salário atual em R$'))
 
 if salario > 1250.00:
     aumento = salario * (10 / 100)

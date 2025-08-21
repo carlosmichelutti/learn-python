@@ -1,4 +1,4 @@
-numero = int (input('Escreva um número para ser calculado a sua tabuada: '))
+numero = int (input('Digite um número para ser calculado a sua tabuada: '))
 
 print('================= TABUADA =================')
 print('{} x {} = {}'.format(numero, 1, numero * 1))

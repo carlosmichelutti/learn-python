@@ -1,4 +1,5 @@
 nome = str(input('Digite o seu nome completo: ')).strip()
+
 nome_maiusculo = nome.upper()
 nome_minusculo = nome.lower()
 total_de_letras = len(nome) - nome.count(' ')

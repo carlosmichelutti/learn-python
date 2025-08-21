@@ -1,6 +1,6 @@
-numero1 = int(input('Escreva um número qualquer: '))
-numero2 = int(input('Escreva outro número qualquer: '))
-numero3 = int(input('Escreva mais um número qualquer: '))
+numero1 = int(input('Digite um número qualquer: '))
+numero2 = int(input('Digite outro número qualquer: '))
+numero3 = int(input('Digite mais um número qualquer: '))
 
 menor = numero1
 if numero2 < numero1 and numero2 < numero3:
