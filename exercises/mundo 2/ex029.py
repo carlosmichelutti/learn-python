@@ -1,5 +1,5 @@
-numero1 = int(input('Escreva um número inteiro qualquer: '))
-numero2 = int(input('Escreva outro número inteiro qualquer: '))
+numero1 = int(input('Digite um número inteiro qualquer: '))
+numero2 = int(input('Digite outro número inteiro qualquer: '))
 
 if numero1 > numero2:
     print(f'O primeiro número digitado é maior que o segundo número, {numero1} > {numero2}.')

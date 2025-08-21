@@ -1,4 +1,4 @@
-numero = int(input('Escreva um número qualquer: '))
+numero = int(input('Digite um número qualquer: '))
 primo = 0
 
 for num in range(1, (numero + 1)):

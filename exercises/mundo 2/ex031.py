@@ -1,7 +1,7 @@
 from datetime import datetime
 from time import sleep
 
-ano_nascimento = int(input('Escreva o seu ano de nascimento: '))
+ano_nascimento = int(input('Digite o seu ano de nascimento: '))
 idade = datetime.today().year - ano_nascimento
 print('Analisando a sua categoria de natação...')
 sleep(3)

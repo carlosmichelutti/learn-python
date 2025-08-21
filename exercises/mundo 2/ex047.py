@@ -1,7 +1,7 @@
 import os
 
-numero1 = int(input('Escreva um número: '))
-numero2 = int(input('Escreva outro número: '))
+numero1 = int(input('Digite um número: '))
+numero2 = int(input('Digite outro número: '))
 condicao = 0
 
 while True:
@@ -35,8 +35,8 @@ while True:
 
     if condicao == 4:
         os.system('cls')
-        numero1 = int(input('Escreva um novo número: '))
-        numero2 = int(input('Escreva outro novo número: '))
+        numero1 = int(input('Digite um novo número: '))
+        numero2 = int(input('Digite outro novo número: '))
         continue
 
     if condicao == 5:

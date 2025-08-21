@@ -1,7 +1,7 @@
 maior = 0
 menor = 0
 for num in range(1, 6):
-    peso = float(input(f'Escreva o peso da {num}º pessoa: '))
+    peso = float(input(f'Digite o peso da {num}º pessoa: '))
     if peso > maior:
         maior = peso
         menor = peso

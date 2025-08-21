@@ -1,4 +1,5 @@
 valor = float(input('Qual o valor normal do produto? R$'))
+
 print('Qual a condição de pagamento? ')
 print('[1] A vista dinheiro/cheque')
 print('[2] A vista no cartão')

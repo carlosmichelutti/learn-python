@@ -5,7 +5,7 @@ resposta = 'S'
 soma = 0
 
 while resposta == 'S':
-    numero = int(input('Escreva um número inteiro qualquer: '))
+    numero = int(input('Digite um número inteiro qualquer: '))
     quantidade_numeros += 1
     soma += numero
 

@@ -2,7 +2,7 @@ quantidade_numeros = 0
 numero = 0
 soma = 0
 while True:
-    numero = int(input('Escreva um número inteiro qualquer [999 para parar]: '))
+    numero = int(input('Digite um número inteiro qualquer [999 para parar]: '))
     if numero == 999:
         break
     soma += numero

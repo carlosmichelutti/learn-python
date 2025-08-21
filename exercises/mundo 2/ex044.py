@@ -1,4 +1,4 @@
-frase =  str(input('Escreva uma frase: ')).strip().lower().replace(' ', '')
+frase =  str(input('Digite uma frase: ')).strip().lower().replace(' ', '')
 frase_ao_contrario = frase[::-1].strip().lower().replace(' ', '')
 
 if frase == frase_ao_contrario:
