@@ -1,6 +1,6 @@
 from datetime import datetime
 
-def verificar_obrigatoriedade_voto(ano_nascimento: int) -> None:
+def verificar_obrigatoriedade_voto(ano_nascimento: int):
 
     if (datetime.today().year - ano_nascimento) < 16:
         print(f'Com {datetime.today().year - ano_nascimento} anos: voto negado.')

@@ -1,4 +1,4 @@
-def verificar_inteiro() -> int:
+def verificar_inteiro():
     while True:
         numero = str(input('Digite um número: '))
         if numero.isnumeric():

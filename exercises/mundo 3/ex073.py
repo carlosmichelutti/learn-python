@@ -1,4 +1,4 @@
-def contar_numeros(inicio: int, fim: int, passo: int) -> None:
+def contar_numeros(inicio: int, fim: int, passo: int):
     if inicio > fim:
         fim -= 1
     else:

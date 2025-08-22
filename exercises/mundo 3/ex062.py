@@ -3,7 +3,7 @@ lista_impares = []
 lista_pares = []
 pos = 0
 while True:
-    numero = int(input('Escreva um número qualquer: '))
+    numero = int(input('Digite um número qualquer: '))
     lista_simples.append(numero)
     resposta = str(input('Quer continuar? [S/N]: ')).upper().strip()
     if resposta == 'N':

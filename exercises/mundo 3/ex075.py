@@ -1,12 +1,12 @@
 from random import randint
 
-def sortear_numeros() -> list:
+def sortear_numeros():
     numeros = []
     for _ in range(0, 5):
         numeros.append(int(randint(1, 10)))
     return numeros
 
-def somar_numeros(numeros: list) -> int:
+def somar_numeros(numeros: list):
     total = 0
     for numero in numeros:
         total += numero
