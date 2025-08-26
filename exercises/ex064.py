@@ -1,10 +1,10 @@
 nomes_menor = []
-nomes_maior =[]
+nomes_maior = []
 auxiliar = []
 grupo = []
 maior = []
 menor = []
-cont= 0
+cont = 0
 
 while True:
     nome = str(input('Digite o nome: '))
@@ -18,29 +18,29 @@ while True:
         nomes_maior.append(grupo[cont][0])
         menor.append(grupo[cont][1])
         nomes_menor.append(grupo[cont][0])
-        cont = cont +1
+        cont += 1
 
     elif grupo[cont][1] > maior[0]:
         maior.pop()
         maior.append(grupo[cont][1])
         nomes_maior.pop()
         nomes_maior.append(grupo[cont][0])
-        cont = cont + 1
+        cont += 1
 
     elif grupo[cont][1] == maior[0]:
         nomes_maior.insert(1, grupo[cont][0])
-        cont = cont + 1
+        cont += 1
 
     elif grupo[cont][1] < menor[0]:
         menor.pop()
         menor.append(grupo[cont][1])
         nomes_menor.pop()
         nomes_menor.append(grupo[cont][0])
-        cont = cont + 1
+        cont += 1
 
     elif grupo[cont][1] == menor[0]:
         nomes_menor.insert(1, grupo[cont][0])
-        cont = cont + 1
+        cont += 1
 
     resposta = str(input('Quer continuar? [S/N]: ')).upper().strip()
     if resposta == 'N':

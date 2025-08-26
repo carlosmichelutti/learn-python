@@ -10,6 +10,6 @@ for c in range(1,8):
 
 numeros[0].sort()
 numeros[1].sort()
-print(numeros)
-print(numeros[0])
-print(numeros[1])
+print(f'Todos os números {numeros}')
+print(f'Números pares: {numeros[0]}')
+print(f'Números ímpares: {numeros[1]}')

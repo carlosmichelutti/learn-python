@@ -14,7 +14,7 @@ elif condicao_de_pagamento == 2:
     print(f'O valor a ser pago pelo produto terá um desconto de 5% e seu novo valor é de R${(valor * 0.95):.2f}.')
 
 elif condicao_de_pagamento == 3:
-    total_parcelas = int(input('Você vai parcelar em quantas vezes? '))
+    total_parcelas = 2
     print(f'O valor a ser pago pelo produto será de R${(valor * 0.95):.2f}. Sendo {total_parcelas} parcelas de R${((valor * 0.95)/total_parcelas):.2f} reais cada.')
 
 elif condicao_de_pagamento == 4:
