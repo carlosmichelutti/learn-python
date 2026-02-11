@@ -1,6 +1,6 @@
-numero = int(input('Digite um número inteiro qualquer: '))
+number = int(input('Enter any integer: '))
 
-if numero % 2 == 0:
-    print(f'O número {numero} é um número par.')
+if number % 2 == 0:
+    print(f'The number {number} is even.')
 else:
-    print(f'O número {numero} é um número impar.')
+    print(f'The number {number} is odd.')
