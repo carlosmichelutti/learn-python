@@ -1,5 +1,5 @@
-valor = float(input('Qual o valor do produto? R$'))
+price = float(input('What is the product price? R$'))
 
-desconto = valor * 0.9
+discounted_price = price * 0.9
 
-print(f'O produto que custava R${valor:.2f} na promoção de 10% ele estará custando R${desconto:.2f}.')
+print(f'The product that cost R${price:.2f} with a 10% discount will cost R${discounted_price:.2f}.')
