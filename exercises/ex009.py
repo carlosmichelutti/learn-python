@@ -1,5 +1,5 @@
-salario = float(input('Quanto é o seu salário? R$'))
+salary = float(input('What is your salary? R$'))
 
-aumento = salario * 1.15
+raise_amount = salary * 1.15
 
-print(f'Uma pessoa que recebe recebe R${salario} com um aumento de 15% passará a ganhar R${aumento:.2f}.')
+print(f'A person who earns R${salary} with a 15% raise will now earn R${raise_amount:.2f}.')
