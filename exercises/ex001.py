@@ -1,6 +1,6 @@
-numero1 = int(input('Digite um número: '))
-numero2 = int(input('Digite outro número: '))
+number1 = int(input('Enter a number: '))
+number2 = int(input('Enter another number: '))
 
-soma = numero1 + numero2
+sum_numbers = number1 + number2
 
-print(f'A soma dos números {numero1} e {numero2} é igual a {soma}.')
+print(f'The sum of the numbers {number1} and {number2} is {sum_numbers}.')
