@@ -1,6 +1,6 @@
-nota1 = float (input('Digite a primeira nota: '))
-nota2 = float (input('Digite a segunda nota: '))
+grade1 = float(input('Enter the first grade: '))
+grade2 = float(input('Enter the second grade: '))
 
-media = float((nota1 + nota2) / 2)
+average = float((grade1 + grade2) / 2)
 
-print(f'A média entre a nota {nota1:.1f} e {nota2:.1f} é igual a {media:.1f}.')
+print(f'The average between the grades {grade1:.1f} and {grade2:.1f} is {average:.1f}.')
