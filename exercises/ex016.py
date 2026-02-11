@@ -1,6 +1,6 @@
-dias = int(input('Quantos dias alugados? '))
-km = int(input('Quantos Km rodados? '))
+days = int(input('How many days rented? '))
+kilometers = int(input('How many kilometers driven? '))
 
-custo = (60 * dias) + (km * 0.15)
+total_cost = (60 * days) + (kilometers * 0.15)
 
-print(f'O custo total a ser pago ao devolver o carro é de R${custo:.2f}.')
+print(f'The total cost to pay when returning the car is R${total_cost:.2f}.')
