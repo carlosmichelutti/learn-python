@@ -1,16 +1,16 @@
-numero1 = int(input('Digite um número: '))
-numero2 = int(input('Digite outro número: '))
+number1 = int(input('Enter a number: '))
+number2 = int(input('Enter another number: '))
 
-soma = numero1 + numero2
-subtracao = numero1 - numero2
-multiplicacao = numero1 * numero2
-divisao = numero1 / numero2
-potencia = numero1 ** numero2
-divisao_inteira = numero1 // numero2
+sum_numbers = number1 + number2
+subtraction = number1 - number2
+multiplication = number1 * number2
+division = number1 / number2
+power = number1 ** number2
+integer_division = number1 // number2
 
-print(f'A soma dos números {numero1} e {numero2} é igual a {soma}.')
-print(f'A subtração dos números {numero1} e {numero2} é igual a {subtracao}.')
-print(f'A multiplicação dos números {numero1} e {numero2} é igual a {multiplicacao}.')
-print(f'A divisão dos números {numero1} e {numero2} é igual a {divisao}.')
-print(f'A potenciação dos números {numero1} e {numero2} é igual a {potencia}.')
-print(f'A divisão inteira dos números {numero1} e {numero2} é igual a {divisao_inteira}.')
+print(f'The sum of the numbers {number1} and {number2} is {sum_numbers}.')
+print(f'The subtraction of the numbers {number1} and {number2} is {subtraction}.')
+print(f'The multiplication of the numbers {number1} and {number2} is {multiplication}.')
+print(f'The division of the numbers {number1} and {number2} is {division}.')
+print(f'The exponentiation of the numbers {number1} and {number2} is {power}.')
+print(f'The integer division of the numbers {number1} and {number2} is {integer_division}.')
