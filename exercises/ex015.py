@@ -1,12 +1,12 @@
-nome = str(input('Digite o seu nome completo: ')).strip()
+full_name = str(input('Enter your full name: ')).strip()
 
-nome_maiusculo = nome.upper()
-nome_minusculo = nome.lower()
-total_de_letras = len(nome) - nome.count(' ')
-primeiro_nome = nome.split(' ')[0]
-primeiro_nome_quantidade_letras = len(primeiro_nome)
+upper_name = full_name.upper()
+lower_name = full_name.lower()
+total_letters = len(full_name) - full_name.count(' ')
+first_name = full_name.split(' ')[0]
+first_name_letter_count = len(first_name)
 
-print(f'Seu nome em maiúsculas é: {nome_maiusculo}.')
-print(f'Seu nome em minúsculas é: {nome_minusculo}.')
-print(f'Seu nome tem ao todo {total_de_letras} letras.')
-print(f'Seu primeiro nome é {primeiro_nome} e ele tem {primeiro_nome_quantidade_letras} letras.')
+print(f'Your name in uppercase is: {upper_name}.')
+print(f'Your name in lowercase is: {lower_name}.')
+print(f'Your name has {total_letters} letters in total.')
+print(f'Your first name is {first_name} and it has {first_name_letter_count} letters.')
