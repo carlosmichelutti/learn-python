@@ -1,7 +1,7 @@
-algo = input('Digite algo: ')
+value = input('Enter something: ')
 
-print('O tipo primitivo do desse valor é', type(algo))
-print('É alfanumerico?', algo.isalnum())
-print('É um alpha?', algo.isalpha())
-print('É um número?', algo.isnumeric())
-print('Só tem espaços?', algo.isspace())
+print('The primitive type of this value is', type(value))
+print('Is it alphanumeric?', value.isalnum())
+print('Is it alphabetic?', value.isalpha())
+print('Is it a number?', value.isnumeric())
+print('Does it contain only spaces?', value.isspace())
