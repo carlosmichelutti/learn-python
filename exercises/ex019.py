@@ -1,10 +1,10 @@
-nome = str(input('Digite o nome do aluno: '))
+student_name = str(input('Enter the student name: '))
 
-nota1 = float(input(f'Digite a primeira nota do aluno {nome}: '))
-nota2 = float(input(f'Digite a segunda nota do aluno {nome}: '))
-media = (nota1 + nota2) / 2
+grade1 = float(input(f'Enter the first grade for {student_name}: '))
+grade2 = float(input(f'Enter the second grade for {student_name}: '))
+average = (grade1 + grade2) / 2
 
-if media >= 7:
-    print(f'Parabéns {nome}, você passou de ano com média de {media}.')
+if average >= 7:
+    print(f'Congratulations {student_name}, you passed with an average of {average}.')
 else:
-    print(f'Infelizmente {nome}, você não passou de ano com média de {media}.')
+    print(f'Unfortunately {student_name}, you did not pass with an average of {average}.')
