@@ -1,11 +1,11 @@
 from random import shuffle
 
-aluno1 = input('Digite o nome do 1º Aluno: ')
-aluno2 = input('Digite o nome do 2º Aluno: ')
-aluno3 = input('Digite o nome do 3º Aluno: ')
-aluno4 = input('Digite o nome do 4º Aluno: ')
+student1 = input('Enter the name of the 1st student: ')
+student2 = input('Enter the name of the 2nd student: ')
+student3 = input('Enter the name of the 3rd student: ')
+student4 = input('Enter the name of the 4th student: ')
 
-lista = [aluno1, aluno2, aluno3, aluno4]
-shuffle(lista)
+students = [student1, student2, student3, student4]
+shuffle(students)
 
-print(f'A ordem de apresentação do trabalho será: {lista}.')
+print(f'The presentation order will be: {students}.')
