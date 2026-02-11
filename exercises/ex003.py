@@ -1,11 +1,11 @@
-numero = int(input('Digite um número: '))
+number = int(input('Enter a number: '))
 
-dobro = numero * 2
-triplo = numero * 3
-raiz = numero ** (1/2)
+double = number * 2
+triple = number * 3
+square_root = number ** (1 / 2)
 
-print(f'O antecessor do número {numero} é igual a {numero - 1}.')
-print(f'O sucessor do número {numero} é igual a {numero + 1}.')
-print(f'O dobro do número {numero} é igual a {dobro}.')
-print(f'O triplo do número {numero} é igual a {triplo}.')
-print(f'A sua raiz quadrada do número {numero} é igual a {raiz:.2f}.')
+print(f'The predecessor of the number {number} is {number - 1}.')
+print(f'The successor of the number {number} is {number + 1}.')
+print(f'The double of the number {number} is {double}.')
+print(f'The triple of the number {number} is {triple}.')
+print(f'The square root of the number {number} is {square_root:.2f}.')
