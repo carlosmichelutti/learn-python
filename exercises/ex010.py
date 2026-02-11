@@ -1,5 +1,5 @@
-celsius = float(input('Digite a temperatura em celsius: '))
+temperature_celsius = float(input('Enter the temperature in Celsius: '))
 
-fahrenheit = celsius * 1.8 + 32
+temperature_fahrenheit = temperature_celsius * 1.8 + 32
 
-print(f'A temperatura de {celsius}°C celsius corresponde a {fahrenheit}°F em fahrenheit.')
+print(f'The temperature of {temperature_celsius}°C corresponds to {temperature_fahrenheit}°F in Fahrenheit.')
