@@ -1,16 +1,16 @@
-metros = float(input('Digite uma distância em metros: '))
+meters = float(input('Enter a distance in meters: '))
 
-km = metros / 1000
-hm = metros / 100
-dam = metros / 10
-dm = metros * 10
-cm = metros * 100
-mm = metros * 1000
+kilometers = meters / 1000
+hectometers = meters / 100
+decameters = meters / 10
+decimeters = meters * 10
+centimeters = meters * 100
+millimeters = meters * 1000
 
-print(f'A distância de {metros} metros corresponde a:')
-print(f'{km} em km.')
-print(f'{hm} em hm.')
-print(f'{dam} em dam.')
-print(f'{dm} em dm.')
-print(f'{cm} em cm.')
-print(f'{mm} em mm.')
+print(f'The distance of {meters} meters corresponds to:')
+print(f'{kilometers} in km.')
+print(f'{hectometers} in hm.')
+print(f'{decameters} in dam.')
+print(f'{decimeters} in dm.')
+print(f'{centimeters} in cm.')
+print(f'{millimeters} in mm.')
