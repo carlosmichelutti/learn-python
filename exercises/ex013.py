@@ -1,10 +1,10 @@
-frase = str(input('Digite uma frase: ')).strip()
+phrase = str(input('Enter a sentence: ')).strip()
 
-frase_maiuscula = frase.upper()
-quantidade_a = frase_maiuscula.count('A')
-primeiro_a = frase_maiuscula.find('A')
-ultimo_a = frase_maiuscula.rfind('A')
+upper_phrase = phrase.upper()
+count_a = upper_phrase.count('A')
+first_a = upper_phrase.find('A')
+last_a = upper_phrase.rfind('A')
 
-print(f'A letra A aparece {quantidade_a} vezes na frase.')
-print(f'A primeira letra A apareceu na posição {primeiro_a + 1}.')
-print(f'A última letra A apareceu na posição {ultimo_a + 1}.')
+print(f'The letter A appears {count_a} times in the sentence.')
+print(f'The first letter A appeared at position {first_a + 1}.')
+print(f'The last letter A appeared at position {last_a + 1}.')
