@@ -1,19 +1,19 @@
-primeiro_termo = int(input('Qual o primeiro termo dessa progresão aritimetica? '))
-razao_progressao = int(input('Qual a razão da progessão? '))
-proximo_termo = primeiro_termo
+first_term = int(input('What is the first term of this arithmetic progression? '))
+common_difference = int(input('What is the common difference of the progression? '))
+next_term = first_term
 cont = 1
 resp = 1
 
 for num in range(10):
-    print(f'{proximo_termo} -> ', end='') if num < 9 else print(proximo_termo)
-    proximo_termo += razao_progressao
+    print(f'{next_term} -> ', end='') if num < 9 else print(next_term)
+    next_term += common_difference
 
-quantidade_termos = int(input('Quer mostrar mais quantos termos? '))
+quantity_terms = int(input('How many more terms do you want to show? '))
 while True:
-    for num in range(0, quantidade_termos):
-        print(f'{proximo_termo} -> ', end='') if num < quantidade_termos - 1 else print(proximo_termo)
-        proximo_termo += razao_progressao
+    for num in range(0, quantity_terms):
+        print(f'{next_term} -> ', end='') if num < quantity_terms - 1 else print(next_term)
+        next_term += common_difference
 
-    quantidade_termos = int(input('Quer mostrar mais quantos termos? '))
-    if quantidade_termos == 0:
+    quantity_terms = int(input('How many more terms do you want to show? '))
+    if quantity_terms == 0:
         break
