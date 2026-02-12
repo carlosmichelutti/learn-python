@@ -1,13 +1,13 @@
-lado1 = float(input('Digite o valor do 1 lado do triângulo: '))
-lado2 = float(input('Digite o valor do 2 lado do triângulo: '))
-lado3 = float(input('Digite o valor do 3 lado do triângulo: '))
+lado1 = float(input('Enter the value of the 1st side of the triangle: '))
+lado2 = float(input('Enter the value of the 2nd side of the triangle: '))
+lado3 = float(input('Enter the value of the 3rd side of the triangle: '))
 
 if lado1 + lado2 > lado3 and lado2 + lado3 > lado1 and lado3 + lado1 > lado2:
     if lado1 == lado2 == lado3:
-        print('Esse triângulo existe, e é um triângulo equilátero.')
+        print('This triangle exists and is an equilateral triangle.')
     elif lado1 != lado2 != lado3 != lado1:
-        print('Esse triângulo é possível e é um triângulo escaleno.')
+        print('This triangle is possible and is a scalene triangle.')
     else: 
-        print('Esse triângulo é um triângulo isósceles.')
+        print('This triangle is an isosceles triangle.')
 else: 
-    print('Esse triângulo não pode existir.')
+    print('This triangle cannot exist.')
