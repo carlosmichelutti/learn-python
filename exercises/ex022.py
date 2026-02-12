@@ -1,7 +1,7 @@
-velocidade = int(input('Digite a velocidade do carro em KM/H: '))
+speed = int(input('Enter the car speed in km/h: '))
 
-if velocidade > 80:
-    valor_da_multa = (velocidade - 80) * 7
-    print(f'Você ultrapassou a velocidade máxima em {velocidade - 80} KM/H na rodovia, sua multa é de R${valor_da_multa} reais.')
+if speed > 80:
+    fine_amount = (speed - 80) * 7
+    print(f'You exceeded the maximum speed by {speed - 80} km/h on the highway. Your fine is R${fine_amount}.')
 else:
-    print('Parabéns, a sua velocidade é adequada a velocidade máxima na rodovia, continue assim!')
+    print('Congratulations, your speed is within the highway limit. Keep it up!')
