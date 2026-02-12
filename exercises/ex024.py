@@ -1,11 +1,11 @@
 from datetime import datetime
 
-ano = int(input('Digite o ano atual ou digite 0 para escrever o ano atual: '))
+year = int(input('Enter a year, or type 0 for the current year: '))
 
-if ano == 0:
-    ano = datetime.today().year
+if year == 0:
+    year = datetime.today().year
 
-if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
-    print(f'O ano {ano} é um ano especial, é bissexto e possui 366 dias.')
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print(f'The year {year} is a leap year and has 366 days.')
 else:
-    print(f'O ano {ano} é um ano comum, e não é um ano bissexto.')
+    print(f'The year {year} is a common year, not a leap year.')
