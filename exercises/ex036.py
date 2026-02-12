@@ -1,23 +1,23 @@
 from random import choice
 
-print('Vamos brincar de pedra, papel e tesoura? ')
-print('Pedra')
-print('Papel')
-print('Tesoura')
-escolha_maquina = choice(['pedra', 'papel', 'tesoura']).lower()
-escolha_usuario = str(input('Escolha uma opção: ')).lower()
+print('Let\'s play rock, paper, scissors! ')
+print('Rock')
+print('Paper')
+print('Scissors')
+computer_choice = choice(['rock', 'paper', 'scissors']).lower()
+user_choice = str(input('Choose an option: ')).lower()
 
-if escolha_maquina == escolha_usuario:
-    print('Empate! Ningúem ganhou dessa vez.')
-elif (escolha_maquina == 'pedra' and escolha_usuario == 'tesoura'):
-    print('Eu ganhei! Tente novamente!')
-elif (escolha_maquina == 'tesoura' and escolha_usuario == 'papel'):
-    print('Eu ganhei! Tente novamente!')
-elif (escolha_maquina == 'papel' and escolha_usuario == 'pedra'):
-    print('Eu ganhei! Tente novamente!')
-elif (escolha_maquina == 'pedra' and escolha_usuario == 'papel'):
-    print('Parabéns! Dessa vez você me ganhou!')
-elif (escolha_maquina == 'tesoura' and escolha_usuario == 'pedra'):
-    print('Parabéns! Dessa vez você me ganhou!')
-elif (escolha_maquina == 'papel' and escolha_usuario == 'tesoura'):
-    print('Parabéns! Dessa vez você me ganhou!')
+if computer_choice == user_choice:
+    print('It\'s a tie! No one won this time.')
+elif (computer_choice == 'rock' and user_choice == 'scissors'):
+    print('I won! Try again!')
+elif (computer_choice == 'scissors' and user_choice == 'paper'):
+    print('I won! Try again!')
+elif (computer_choice == 'paper' and user_choice == 'rock'):
+    print('I won! Try again!')
+elif (computer_choice == 'rock' and user_choice == 'paper'):
+    print('Congrats! This time you beat me!')
+elif (computer_choice == 'scissors' and user_choice == 'rock'):
+    print('Congrats! This time you beat me!')
+elif (computer_choice == 'paper' and user_choice == 'scissors'):
+    print('Congrats! This time you beat me!')
