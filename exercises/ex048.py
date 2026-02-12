@@ -1,11 +1,11 @@
 from random import randrange
 
-numero_fatorial = randrange(1, 10)
-calculo = numero_fatorial
-fatorial = 0
+factorial_number = randrange(1, 10)
+product = factorial_number
+factorial = 0
 
-while numero_fatorial >= 1:
-    print(f'{numero_fatorial} x', end=' ') if numero_fatorial > 1 else print(f'{numero_fatorial} = {calculo}', end=' ')
-    numero_fatorial = numero_fatorial - 1
-    if numero_fatorial > 0:
-        calculo = numero_fatorial * calculo
+while factorial_number >= 1:
+    print(f'{factorial_number} x', end=' ') if factorial_number > 1 else print(f'{factorial_number} = {product}', end=' ')
+    factorial_number = factorial_number - 1
+    if factorial_number > 0:
+        product = factorial_number * product
