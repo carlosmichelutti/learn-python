@@ -1,11 +1,11 @@
-numero = int(input('Digite um número qualquer: '))
-primo = 0
+number = int(input('Enter any number: '))
+divisor_count = 0
 
-for num in range(1, (numero + 1)):
-    if numero % num == 0:
-        primo += 1
+for num in range(1, (number + 1)):
+    if number % num == 0:
+        divisor_count += 1
 
-if primo == 2:
-    print(f'O número {numero} é um número primo.')
-elif primo > 2:
-    print(f'O número {numero} não é um número primo.')
+if divisor_count == 2:
+    print(f'The number {number} is a prime number.')
+elif divisor_count > 2:
+    print(f'The number {number} is not a prime number.')
