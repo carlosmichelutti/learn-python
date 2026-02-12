@@ -1,15 +1,15 @@
-maior = 0
-menor = 0
+max_weight = 0
+min_weight = 0
 for num in range(1, 6):
-    peso = float(input(f'Digite o peso da {num}º pessoa: '))
+    weight = float(input(f'Enter the weight of person #{num}: '))
     if num == 1:
-        maior = peso
-        menor = peso
+        max_weight = weight
+        min_weight = weight
         continue
-    if peso > maior:
-        maior = peso
-    elif peso < menor: 
-        menor = peso
+    if weight > max_weight:
+        max_weight = weight
+    elif weight < min_weight: 
+        min_weight = weight
 
-print(f'O maior peso lido foi {maior}kg.')
-print(f'O menor peso lido foi {menor}kg.')
+print(f'The highest weight read was {max_weight}kg.')
+print(f'The lowest weight read was {min_weight}kg.')
