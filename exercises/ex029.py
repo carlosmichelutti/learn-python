@@ -1,9 +1,9 @@
-numero1 = int(input('Digite um número inteiro qualquer: '))
-numero2 = int(input('Digite outro número inteiro qualquer: '))
+number1 = int(input('Enter any integer: '))
+number2 = int(input('Enter another integer: '))
 
-if numero1 > numero2:
-    print(f'O primeiro número digitado é maior que o segundo número, {numero1} > {numero2}.')
-elif numero2 > numero1:
-    print(f'O segundo número digitado é maior que o primeiro número, {numero2} > {numero1}.')
-elif numero1 == numero2:
-    print(f'Os dois números informados são iguais, {numero1} = {numero2}.')
+if number1 > number2:
+    print(f'The first number is greater than the second, {number1} > {number2}.')
+elif number2 > number1:
+    print(f'The second number is greater than the first, {number2} > {number1}.')
+elif number1 == number2:
+    print(f'The two numbers are equal, {number1} = {number2}.')
