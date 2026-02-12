@@ -1,18 +1,18 @@
-numero1 = int(input('Digite um número qualquer: '))
-numero2 = int(input('Digite outro número qualquer: '))
-numero3 = int(input('Digite mais um número qualquer: '))
+number1 = int(input('Enter any number: '))
+number2 = int(input('Enter another number: '))
+number3 = int(input('Enter one more number: '))
 
-menor = numero1
-if numero2 < numero1 and numero2 < numero3:
-    menor = numero2
-if numero3 < numero1 and numero3 < numero2:
-    menor = numero3
+smallest = number1
+if number2 < number1 and number2 < number3:
+    smallest = number2
+if number3 < number1 and number3 < number2:
+    smallest = number3
 
-maior = numero1
-if numero2 > numero1 and numero2 > numero3:
-    maior = numero2
-if numero3 > numero1 and numero3 > numero2:
-    maior = numero3
+largest = number1
+if number2 > number1 and number2 > number3:
+    largest = number2
+if number3 > number1 and number3 > number2:
+    largest = number3
 
-print(f'O menor valor digitado foi o número: {menor}.')
-print(f'O maior valor digitado foi o número: {maior}.')
+print(f'The smallest value entered was: {smallest}.')
+print(f'The largest value entered was: {largest}.')
