@@ -1,8 +1,8 @@
 from time import sleep
 
-print('Contagem regressiva para o estouro dos fogos...')
-for c in range (10, -1, -1):
-    print(c)
+print('Countdown to the fireworks...')
+for n in range (10, -1, -1):
+    print(n)
     sleep(1)
 
-print('Feliz ano novo!!!')
+print('Happy New Year!!!')
