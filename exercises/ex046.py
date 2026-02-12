@@ -1,15 +1,15 @@
 from random import randint
 
-print('Vamos jogar? Eu vou pensar em um número de 1 a 10 e você tenta adivinhar!!')
-jogouser = 0
-jogopc = randint(1, 10)
-print('Pensei em um número de 1 a 10, tente adivinhar agora!')
-quantidade_de_tentativas = 0
+print('Let\'s play? I will think of a number from 1 to 10 and you try to guess it!!')
+user_guess = 0
+computer_number = randint(1, 10)
+print('I picked a number from 1 to 10, try to guess it now!')
+attempt_count = 0
 
-while jogopc != jogouser:
-    jogouser = int(input('Em que número eu pensei? '))
-    if jogouser != jogopc:
-        print('Você errou! Tente novamente!')
-        quantidade_de_tentativas += 1
+while computer_number != user_guess:
+    user_guess = int(input('What number did I pick? '))
+    if user_guess != computer_number:
+        print('You missed! Try again!')
+        attempt_count += 1
 
-print(f'Parabéns você acertou em apenas {quantidade_de_tentativas} tentativas.')
+print(f'Congrats, you got it in just {attempt_count} attempts.')
