@@ -1,22 +1,22 @@
 import os
 
 pessoas_maiores_de_idade = 0
-quantidade_de_mulheres = 0
-homem_maior_idade = None
-menor_idade = 0
-maior_idade = 0
+women_count = 0
+oldest_man_name = None
+youngest_age = 0
+oldest_age = 0
 
 for c in range (1, 5):
-    sexo = str(input('Qual é o seu sexo? [M/F]? ')).upper().strip()
-    nome = str(input('Qual é o seu nome? ')).capitalize().strip()
-    idade = int(input(f'Quantos anos você tem {nome}? '))
+    gender = str(input('What is your gender? [M/F]? ')).upper().strip()
+    name = str(input('What is your name? ')).capitalize().strip()
+    age = int(input(f'How old are you, {name}? '))
     os.system('cls')
-    if sexo == 'F':
-        quantidade_de_mulheres += 1
+    if gender == 'F':
+        women_count += 1
 
-    if sexo == 'M' and idade > maior_idade:
-        maior_idade = idade
-        homem_maior_idade = nome
+    if gender == 'M' and age > oldest_age:
+        oldest_age = age
+        oldest_man_name = name
 
-print(f'Homem com maior idade: {homem_maior_idade} com {maior_idade} anos.')
-print(f'Quantidade de mulheres no grupo: {quantidade_de_mulheres}.')
+print(f'Oldest man: {oldest_man_name} at {oldest_age} years old.')
+print(f'Number of women in the group: {women_count}.')
