@@ -1,15 +1,15 @@
-numero = int(input('Digite um número inteiro: '))
+number = int(input('Enter an integer: '))
 
-print('Você quer converter esse número para:')
-print('[1] - Binário')
+print('You want to convert this number to:')
+print('[1] - Binary')
 print('[2] - Octal')
 print('[3] - Hexadecimal')
 
-conversao = int(input('Escolha uma opção: '))
+conversion = int(input('Choose an option: '))
 
-if conversao == 1:
-    print(f'O número {numero} convertido para número binário é igual a {bin(numero)[2:]}.')
-elif conversao == 2:
-    print(f'O número {numero} convertido para o formato octal é igual a {oct(numero)[2:]}.')
-elif conversao == 3:
-    print(f'O número {numero} convertido para o formato hexadecimal é igual a {hex(numero)[2:]}.')
+if conversion == 1:
+    print(f'The number {number} converted to binary is {bin(number)[2:]}.')
+elif conversion == 2:
+    print(f'The number {number} converted to octal is {oct(number)[2:]}.')
+elif conversion == 3:
+    print(f'The number {number} converted to hexadecimal is {hex(number)[2:]}.')
