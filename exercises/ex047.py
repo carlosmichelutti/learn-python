@@ -1,44 +1,44 @@
 import os
 
-numero1 = int(input('Digite um número: '))
-numero2 = int(input('Digite outro número: '))
-condicao = 0
+number1 = int(input('Enter a number: '))
+number2 = int(input('Enter another number: '))
+condition = 0
 
 while True:
-    print('Escolha o que fazer com os números digitados: ')
-    print('[1] Soma-los')
-    print('[2] Multiplica-los')
-    print('[3] Mostrar o maior')
-    print('[4] Novos números')
-    print('[5] Sair do programa.')
-    condicao = int(input('Escolha uma opção: '))
+    print('Choose what to do with the entered numbers: ')
+    print('[1] Add them')
+    print('[2] Multiply them')
+    print('[3] Show the larger one')
+    print('[4] New numbers')
+    print('[5] Exit the program')
+    condition = int(input('Choose an option: '))
 
-    if condicao == 1:
+    if condition == 1:
         os.system('cls')
-        print(f'A soma de {numero1} e {numero2} é igual a {numero1 + numero2}.')
+        print(f'The sum of {number1} and {number2} is {number1 + number2}.')
         continue
 
-    if condicao == 2:
+    if condition == 2:
         os.system('cls')
-        print(f'A multiplicação entre {numero1} e {numero2} é igual a {numero1 * numero2}.')
+        print(f'The product of {number1} and {number2} is {number1 * number2}.')
         continue
 
-    if condicao == 3:
+    if condition == 3:
         os.system('cls')
-        if numero1 > numero2:
-            print(f'O número {numero1} é maior que o número {numero2}.')
-        elif numero2 > numero1:
-            print(f'O número {numero2} é maior que o número {numero1}.')
-        elif numero2 == numero1:
-            print(f'Os números {numero1} e {numero2} são iguais.')
+        if number1 > number2:
+            print(f'The number {number1} is greater than {number2}.')
+        elif number2 > number1:
+            print(f'The number {number2} is greater than {number1}.')
+        elif number2 == number1:
+            print(f'The numbers {number1} and {number2} are equal.')
         continue
 
-    if condicao == 4:
+    if condition == 4:
         os.system('cls')
-        numero1 = int(input('Digite um novo número: '))
-        numero2 = int(input('Digite outro novo número: '))
+        number1 = int(input('Enter a new number: '))
+        number2 = int(input('Enter another new number: '))
         continue
 
-    if condicao == 5:
-        print('FIM')
+    if condition == 5:
+        print('END')
         break
