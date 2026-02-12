@@ -1,16 +1,23 @@
 from datetime import datetime
 
-year = datetime.today().year
-sexo = str(input('Digite o seu gênero [M/F]: ')).upper()
+current_year = datetime.today().year
+gender = str(input('Enter your gender [M/F]: ')).upper()
 
-if sexo == 'F':
-    print('Você não é obrigada a se alistar no exercito. Até mais!')
+if gender == 'F':
+    print('You are not required to enlist in the army. See you later!')
 else:
-    ano_nascimento = int(input('Em que ano você nasceu? '))
-    diferença = year - ano_nascimento
-    if year - ano_nascimento < 18:
-        print(f'Você ainda não tem idade para se alistar ao exercito. Só poderá se alistar em {abs(diferença - 18)} anos. Seu alistamento será em {ano_nascimento + 18}.')
-    elif year - ano_nascimento == 18:
-        print('Você está em idade de se alistar ao exercito. Não esqueça.')
-    elif year - ano_nascimento > 18:
-        print(f'Aliste-se já! Você está atrasado com seu seriviço militar em {diferença - 18} anos. O seu alistamento obrigatório foi em {ano_nascimento + 18}.')
+    birth_year = int(input('What year were you born? '))
+    age = current_year - birth_year
+    if age < 18:
+        print(
+            f'You are not old enough to enlist in the army. You will be able to '
+            f'enlist in {abs(age - 18)} years. Your enlistment will be in '
+            f'{birth_year + 18}.'
+        )
+    elif age == 18:
+        print('You are at the right age to enlist in the army. Do not forget.')
+    elif age > 18:
+        print(
+            f'Enlist now! You are {age - 18} years late for your military service. '
+            f'Your mandatory enlistment was in {birth_year + 18}.'
+        )
