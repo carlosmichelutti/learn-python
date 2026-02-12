@@ -1,22 +1,28 @@
-valor = float(input('Qual o valor normal do produto? R$'))
+price = float(input('What is the normal price of the product? R$'))
 
-print('Qual a condição de pagamento? ')
-print('[1] A vista dinheiro/cheque')
-print('[2] A vista no cartão')
-print('[3] Em 2x no cartão')
-print('[4] Em 3x ou mais no cartão')
+print('What is the payment condition? ')
+print('[1] Cash/check (upfront)')
+print('[2] Card (upfront)')
+print('[3] Card in 2 installments')
+print('[4] Card in 3 or more installments')
 
-condicao_de_pagamento = int(input('Digite alguma opção: '))
-if condicao_de_pagamento == 1:
-    print(f'O valor a ser pago pelo produto terá um desconto de 10% e o novo valor a ser pago é de R${(valor * 0.90):.2f}.')
+payment_condition = int(input('Enter an option: '))
+if payment_condition == 1:
+    print(f'The product price gets a 10% discount and the new amount is R${(price * 0.90):.2f}.')
 
-elif condicao_de_pagamento == 2:
-    print(f'O valor a ser pago pelo produto terá um desconto de 5% e seu novo valor é de R${(valor * 0.95):.2f}.')
+elif payment_condition == 2:
+    print(f'The product price gets a 5% discount and the new amount is R${(price * 0.95):.2f}.')
 
-elif condicao_de_pagamento == 3:
-    total_parcelas = 2
-    print(f'O valor a ser pago pelo produto será de R${(valor * 0.95):.2f}. Sendo {total_parcelas} parcelas de R${((valor * 0.95)/total_parcelas):.2f} reais cada.')
+elif payment_condition == 3:
+    total_installments = 2
+    print(
+        f'The product price will be R${(price * 0.95):.2f}, '
+        f'in {total_installments} installments of R${((price * 0.95) / total_installments):.2f} each.'
+    )
 
-elif condicao_de_pagamento == 4:
-    total_parcelas = int(input('Você vai parcelar em quantas vezes? '))
-    print(f'O valor a ser pago pelo produto será de R${(valor * 0.95):.2f}. Sendo {total_parcelas} parcelas de R${((valor * 0.95)/total_parcelas):.2f} reais cada.')
+elif payment_condition == 4:
+    total_installments = int(input('How many installments will you use? '))
+    print(
+        f'The product price will be R${(price * 0.95):.2f}, '
+        f'in {total_installments} installments of R${((price * 0.95) / total_installments):.2f} each.'
+    )
