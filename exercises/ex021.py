@@ -1,10 +1,10 @@
-nome = str(input('Digite seu nome: '))
+name = str(input('Enter your name: '))
 
-salario = float(input(f'{nome} digite o seu salário atual em R$'))
+salary = float(input(f'{name}, enter your current salary in R$: '))
 
-if salario > 1250.00:
-    aumento = salario * (10 / 100)
-    print(f'O seu antigo salário era R${salario:.2f} reais, o seu salário atual agora é de R${(salario + aumento):.2f} reais')
+if salary > 1250.00:
+    raise_amount = salary * (10 / 100)
+    print(f'Your previous salary was R${salary:.2f}, and your current salary is R${(salary + raise_amount):.2f}.')
 else:
-    aumento = salario * (15 / 100)
-    print(f'O seu antigo salário era R${salario:.2f} reais, o seu salário atual agora é de R${(salario + aumento):.2f} reais')
+    raise_amount = salary * (15 / 100)
+    print(f'Your previous salary was R${salary:.2f}, and your current salary is R${(salary + raise_amount):.2f}.')
