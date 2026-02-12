@@ -1,6 +1,6 @@
-distancia = int(input('Quantos km você vai viajar? '))
+distance = int(input('How many km will you travel? '))
 
-if distancia <= 200:
-    print(f'O valor da viajem é de R${(distancia*0.50):.2f} reais.')
+if distance <= 200:
+    print(f'The trip cost is R${(distance * 0.50):.2f}.')
 else:
-    print(f'O valor total da viajem será de R${(distancia*0.45):.2f} reais.')
+    print(f'The total trip cost will be R${(distance * 0.45):.2f}.')
