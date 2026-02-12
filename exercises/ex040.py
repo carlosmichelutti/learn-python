@@ -1,5 +1,5 @@
-primeiro_termo = int(input('Qual o primeiro termo dessa progresão aritimetica? '))
-razao = int(input('Qual a razão da progessão? '))
+first_term = int(input('What is the first term of this arithmetic progression? '))
+common_difference = int(input('What is the common difference of the progression? '))
 
-for num in range(primeiro_termo, (primeiro_termo + (11-1)*razao), razao):
-    print(num, end=' -> ') if num < (primeiro_termo + (11-1)*razao - razao) else print(num)
+for num in range(first_term, (first_term + (11 - 1) * common_difference), common_difference):
+    print(num, end=' -> ') if num < (first_term + (11 - 1) * common_difference - common_difference) else print(num)
