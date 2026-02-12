@@ -1,12 +1,12 @@
 from time import sleep
 import random
 
-numero_pc = random.randint(1, 5)
-print('Pensando em um número de 1 a 5...')
+computer_number = random.randint(1, 5)
+print('Thinking of a number from 1 to 5...')
 sleep(2)
-numero_usuario = int(input('Adivinhe em qual número o eu pensei: '))
+user_number = int(input('Guess which number I thought of: '))
 
-if numero_usuario == numero_pc:
-    print(f'Você acertou eu pensei no número {numero_pc}')
+if user_number == computer_number:
+    print(f'You got it right! I thought of the number {computer_number}.')
 else:
-    print(f'Você errou... eu pensei no número {numero_pc} e você falou {numero_usuario}, tente novamente!')
+    print(f'You got it wrong... I thought of the number {computer_number} and you said {user_number}. Try again!')
