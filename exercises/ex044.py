@@ -1,9 +1,9 @@
-frase =  str(input('Digite uma frase: ')).strip().lower().replace(' ', '')
-frase_ao_contrario = frase[::-1].strip().lower().replace(' ', '')
+phrase = str(input('Enter a phrase: ')).strip().lower().replace(' ', '')
+reversed_phrase = phrase[::-1].strip().lower().replace(' ', '')
 
-if frase == frase_ao_contrario:
-    print(f'A frase {frase} é um políndromo e ela é completamente igual de frente para trás como de trás para frente.')
-    print(f'Frase normal: {frase}.')
-    print(f'Frase ao contrário: {frase_ao_contrario}.')
+if phrase == reversed_phrase:
+    print(f'The phrase {phrase} is a palindrome and reads the same forward and backward.')
+    print(f'Normal phrase: {phrase}.')
+    print(f'Reversed phrase: {reversed_phrase}.')
 else:
-    print(f'A frase {frase} não é um políndromo.')
+    print(f'The phrase {phrase} is not a palindrome.')
