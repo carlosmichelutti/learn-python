@@ -1,14 +1,14 @@
-resposta = str(input('Você deseja fazer um empréstimo? [S/N] ')).upper().strip()
+answer = str(input('Do you want to take out a loan? [Y/N] ')).upper().strip()
  
-if resposta == 'S':
-    valor_total = float(input('Qual o valor total da casa? R$'))
-    salario =  float(input('Qual é o seu salário? R$'))
-    anos = int(input('Em quantos anos você quer realizar o pagamento total? '))
-    prestacao_mensal = valor_total / anos / 12
+if answer == 'Y':
+    total_value = float(input('What is the total price of the house? R$'))
+    salary = float(input('What is your salary? R$'))
+    years = int(input('In how many years do you want to pay it off? '))
+    monthly_payment = total_value / years / 12
 
-    if prestacao_mensal > (salario * 0.30):
-        print('Erro! Você não pode realizar esse emprestimo, pois ele ultrapassa 30% do seu salário mensal.')
+    if monthly_payment > (salary * 0.30):
+        print('Error! You cannot take this loan because it exceeds 30% of your monthly salary.')
     else:
-        print(f'Você pode realizar esse empréstimo, e terá de pagar R${prestacao_mensal:.2f} reais por mês durante {anos} anos.')
+        print(f'You can take this loan, and you will pay R${monthly_payment:.2f} per month for {years} years.')
 else: 
-    print('Obrigado, até mais!')
+    print('Thanks, see you later!')
