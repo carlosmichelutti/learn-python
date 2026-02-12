@@ -1,14 +1,14 @@
 from datetime import datetime
 
-ano_atual = datetime.today().year
-pessoas_maior_de_idade = 0
-pessoas_menor_de_idade = 0
+current_year = datetime.today().year
+adults_count = 0
+minors_count = 0
 for num in range(0, 7):
-    ano_nascimento = int(input(f'Digite o ano de nascimento da {num+1}º pessoa: '))
-    if ano_atual - ano_nascimento >= 18:
-        pessoas_maior_de_idade += 1
+    birth_year = int(input(f'Enter the birth year of person #{num + 1}: '))
+    if current_year - birth_year >= 18:
+        adults_count += 1
     else: 
-        pessoas_menor_de_idade += 1
+        minors_count += 1
 
-print(f'No grupo existem {pessoas_maior_de_idade} pessoas que são maior de idade.')
-print(f'No grupo existem {pessoas_menor_de_idade} pessoas que são menores de idade.')
+print(f'There are {adults_count} adults in the group.')
+print(f'There are {minors_count} minors in the group.')
