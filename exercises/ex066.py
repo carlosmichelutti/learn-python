@@ -1,14 +1,14 @@
-numeros_impares = []
-numeros_pares = []
-numeros = []
+odd_numbers = []
+even_numbers = []
+numbers = []
 
 for _ in range(1, 8):
-    numero = int(input('Digite um número: '))
-    if numero % 2 == 0:
-        numeros_pares.append(numero)
+    number = int(input('Enter a number: '))
+    if number % 2 == 0:
+        even_numbers.append(number)
 
-    if numero % 2 == 1: 
-        numeros_impares.append(numero)
+    if number % 2 == 1:
+        odd_numbers.append(number)
 
-print(f'Os números pares registrados foram: {numeros_pares}.')
-print(f'Os números impares registrados foram: {numeros_impares}.')
+print(f'The even numbers recorded were: {even_numbers}.')
+print(f'The odd numbers recorded were: {odd_numbers}.')
