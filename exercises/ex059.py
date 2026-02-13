@@ -1,20 +1,26 @@
-numeros = list()
+numbers = list()
 
-maior_numero = 0
-menor_numero = 0
+highest_number = 0
+lowest_number = 0
 
-for num in range (0, 5):
-    numeros.append(int(input(f'Digite um valor para a posição {num}: ')))
+for num in range(0, 5):
+    numbers.append(int(input(f'Enter a value for position {num}: ')))
     if num == 0:
-        maior_numero = numeros[num]
-        menor_numero = numeros[num]
+        highest_number = numbers[num]
+        lowest_number = numbers[num]
 
-    if numeros[num] > maior_numero:
-        maior_numero = numeros[num]
+    if numbers[num] > highest_number:
+        highest_number = numbers[num]
 
-    elif numeros[num] < menor_numero:
-        menor_numero = numeros[num]
+    elif numbers[num] < lowest_number:
+        lowest_number = numbers[num]
 
-print(f'Números: {numeros}')
-print(f'O menor número digitado foi o {menor_numero} nas posições {', '.join(str(i) for i, v in enumerate(numeros) if v == menor_numero)}')
-print(f'O maior número digitado foi o {maior_numero} nas posições {', '.join(str(i) for i, v in enumerate(numeros) if v == maior_numero)}')
+print(f'Numbers: {numbers}')
+print(
+    f"The lowest number entered was {lowest_number} at positions "
+    f"{', '.join(str(i) for i, v in enumerate(numbers) if v == lowest_number)}"
+)
+print(
+    f"The highest number entered was {highest_number} at positions "
+    f"{', '.join(str(i) for i, v in enumerate(numbers) if v == highest_number)}"
+)
