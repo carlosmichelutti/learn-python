@@ -3,16 +3,16 @@ from time import sleep
 
 print('================= MEGA SENA DA VIRADA =================')
 print('=======================================================')
-quantidade_jogos = int(input('Deseja realizar quantos jogos? '))
+game_count = int(input('How many games do you want to play? '))
 
-for c in range(0, quantidade_jogos):
-    jogo = []
+for c in range(0, game_count):
+    game = []
     while True:
-        numero = randint(1, 60)
-        if numero not in jogo:
-            jogo.append(numero)
-        if len(jogo) >= 6:
+        number = randint(1, 60)
+        if number not in game:
+            game.append(number)
+        if len(game) >= 6:
             break
 
-    print(f'Jogo Nº{c+1}: {jogo}.')
+    print(f'Game No.{c + 1}: {game}.')
     sleep(1)
