@@ -1,15 +1,15 @@
-numeros = [[],[]]
-valor = 0
+numbers = [[], []]
+value = 0
 
-for c in range(1,8):
-    valor = int(input('Digite um valor: '))
-    if valor % 2 == 0:
-        numeros[0].append(valor)
+for c in range(1, 8):
+    value = int(input('Enter a value: '))
+    if value % 2 == 0:
+        numbers[0].append(value)
     else:
-        numeros[1].append(valor)
+        numbers[1].append(value)
 
-numeros[0].sort()
-numeros[1].sort()
-print(f'Todos os números {numeros}')
-print(f'Números pares: {numeros[0]}')
-print(f'Números ímpares: {numeros[1]}')
+numbers[0].sort()
+numbers[1].sort()
+print(f'All numbers {numbers}')
+print(f'Even numbers: {numbers[0]}')
+print(f'Odd numbers: {numbers[1]}')
