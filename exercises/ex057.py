@@ -1,6 +1,6 @@
 import random
 
-numeros_sorteados = (
+drawn_numbers = (
     random.randint(1, 10),
     random.randint(1, 10),
     random.randint(1, 10),
@@ -8,41 +8,41 @@ numeros_sorteados = (
     random.randint(1, 10)
 )
 
-print(f'Os números sorteados foram: {numeros_sorteados}')
+print(f'The drawn numbers were: {drawn_numbers}')
 
-maior_numero = 0
-menor_numero = 0
+highest_number = 0
+lowest_number = 0
 
 while True:
 
-    if (numeros_sorteados[0]) == (numeros_sorteados[0]):
-        maior_numero =  numeros_sorteados[0]
-        menor_numero = numeros_sorteados[0]
+    if drawn_numbers[0] == drawn_numbers[0]:
+        highest_number = drawn_numbers[0]
+        lowest_number = drawn_numbers[0]
 
-    if (numeros_sorteados[1]) >  maior_numero:
-        maior_numero = numeros_sorteados[1]
+    if drawn_numbers[1] > highest_number:
+        highest_number = drawn_numbers[1]
 
-    elif (numeros_sorteados[1]) < menor_numero:
-        menor_numero = numeros_sorteados[1]
+    elif drawn_numbers[1] < lowest_number:
+        lowest_number = drawn_numbers[1]
 
-    if (numeros_sorteados[2]) > maior_numero:
-        maior_numero =  numeros_sorteados[2]
+    if drawn_numbers[2] > highest_number:
+        highest_number = drawn_numbers[2]
 
-    elif (numeros_sorteados[2]) < menor_numero:
-        menor_numero = numeros_sorteados[2]
+    elif drawn_numbers[2] < lowest_number:
+        lowest_number = drawn_numbers[2]
 
-    if (numeros_sorteados[3]) > maior_numero:
-        maior_numero = numeros_sorteados[3]
+    if drawn_numbers[3] > highest_number:
+        highest_number = drawn_numbers[3]
 
-    elif (numeros_sorteados[3]) < menor_numero:
-        menor_numero = numeros_sorteados[3]
+    elif drawn_numbers[3] < lowest_number:
+        lowest_number = drawn_numbers[3]
 
-    if (numeros_sorteados[4]) > maior_numero:
-        maior_numero = numeros_sorteados[4]
+    if drawn_numbers[4] > highest_number:
+        highest_number = drawn_numbers[4]
 
-    elif (numeros_sorteados[4]) < menor_numero:
-        menor_numero = numeros_sorteados[4]
+    elif drawn_numbers[4] < lowest_number:
+        lowest_number = drawn_numbers[4]
     break
 
-print(f'O maior valor sorteado foi o {maior_numero}.')
-print(f'O menor valor sorteado foi o {menor_numero}.')
+print(f'The highest drawn value was {highest_number}.')
+print(f'The lowest drawn value was {lowest_number}.')
