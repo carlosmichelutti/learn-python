@@ -1,14 +1,14 @@
 from operator import itemgetter
 from random import randint
 
-jogadores = {}
-jogadores_em_ordem = {}
-for jogador in range(0, 4):
-    numero = randint(1, 6)
-    jogadores[f'Jogador{jogador+1}'] = numero
-    print(f'O jogador{jogador+1} tirou {numero}.')
+players = {}
+players_in_order = {}
+for player in range(0, 4):
+    number = randint(1, 6)
+    players[f'Player{player + 1}'] = number
+    print(f'Player {player + 1} rolled {number}.')
 
-jogadores_em_ordem = list()
-jogadores_em_ordem = sorted(jogadores.items(), key=itemgetter(1), reverse=True)
-for index, value in enumerate(jogadores_em_ordem):
-    print(f'O {index+1}º lugar: {value[0]} com {value[1]}.')
+players_in_order = list()
+players_in_order = sorted(players.items(), key=itemgetter(1), reverse=True)
+for index, value in enumerate(players_in_order):
+    print(f'{index + 1}st place: {value[0]} with {value[1]}.')
