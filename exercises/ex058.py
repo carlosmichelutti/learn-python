@@ -1,20 +1,20 @@
-numeros = (
-    int(input('Digite um número: ')), 
-    int(input('Digite um número: ')), 
-    int(input('Digite um número: ')), 
-    int(input('Digite um número: '))
+numbers = (
+    int(input('Enter a number: ')),
+    int(input('Enter a number: ')),
+    int(input('Enter a number: ')),
+    int(input('Enter a number: '))
 )
 
-print(f'O número 9 apareceu {numeros.count(9)} vezes.')
+print(f'The number 9 appeared {numbers.count(9)} times.')
 
-if 3 not in numeros:
-    print('Nenhum número 3 foi digitado.')
+if 3 not in numbers:
+    print('No number 3 was entered.')
 else:
-    print(f'O primeiro número 3 foi digitado na {numeros.index(3)+1}ª posição.')
+    print(f'The first number 3 was entered at position {numbers.index(3) + 1}.')
 
 for num in range(0, 4):
-    if numeros[num] % 2 == 0:
-        print(f'Os valores pares digitados foram {numeros[num]}')
+    if numbers[num] % 2 == 0:
+        print(f'The even values entered were {numbers[num]}')
 
-if all(n % 2 != 0 for n in numeros):
-    print('Não foi digitado nenhum número par.')
+if all(n % 2 != 0 for n in numbers):
+    print('No even number was entered.')
