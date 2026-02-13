@@ -1,30 +1,30 @@
 print('=' * 50)
-print('{:^50}'.format('Banco do brasil'))
+print('{:^50}'.format('Banco do Brasil'))
 print('=' * 50)
 
-notas_de_50 = 0
-notas_de_20 = 0
-notas_de_10 = 0
-notas_de_1 = 0 
+notes_50 = 0
+notes_20 = 0
+notes_10 = 0
+notes_1 = 0
 
-saque = float(input('Quanto você quer sacar? '))
+withdrawal = float(input('How much do you want to withdraw? '))
 
 while True:
-    if saque > 49:
-        saque -= 50
-        notas_de_50 += 1
-    elif saque > 19:
-        saque -= 20
-        notas_de_20 += 1
-    elif saque > 9:
-        saque -= 10
-        notas_de_10 += 1
-    elif saque > 0:
-        saque -= 1
-        notas_de_1 += 1
-    elif saque == 0:
-        print(f'Total de cédulas de R$50 - {notas_de_50} cédulas.')
-        print(f'Total de cédulas de R$20 - {notas_de_20} cédulas.')
-        print(f'Total de cédulas de R$10 - {notas_de_10} cédulas.')
-        print(f'Total de cédulas de R$1 - {notas_de_1} cédulas.')
+    if withdrawal > 49:
+        withdrawal -= 50
+        notes_50 += 1
+    elif withdrawal > 19:
+        withdrawal -= 20
+        notes_20 += 1
+    elif withdrawal > 9:
+        withdrawal -= 10
+        notes_10 += 1
+    elif withdrawal > 0:
+        withdrawal -= 1
+        notes_1 += 1
+    elif withdrawal == 0:
+        print(f'Total number of $50 notes - {notes_50} notes.')
+        print(f'Total number of $20 notes - {notes_20} notes.')
+        print(f'Total number of $10 notes - {notes_10} notes.')
+        print(f'Total number of $1 notes - {notes_1} notes.')
         break
