@@ -1,37 +1,37 @@
-quantidade_maior_que_1000 = 0
-quantidade_de_produtos = 0
-menor_valor = 0
-menor_nome = ''
-resposta = 'S'
-menor = 0
-soma = 0
+count_over_1000 = 0
+product_count = 0
+lowest_price = 0
+lowest_name = ''
+answer = 'Y'
+lowest = 0
+total = 0
 
-while not resposta == 'N':
-    nome = str(input('Qual o nome do produto? '))
-    valor = float(input('Qual o valor do produto? R$'))
-    quantidade_de_produtos += 1
-    soma += valor
+while answer != 'N':
+    name = str(input('What is the product name? '))
+    price = float(input('What is the product price? R$'))
+    product_count += 1
+    total += price
 
-    if valor > 1000:
-        quantidade_maior_que_1000 += 1
+    if price > 1000:
+        count_over_1000 += 1
 
-    if quantidade_de_produtos == 1:
-        menor_nome = nome
-        menor_valor = valor
+    if product_count == 1:
+        lowest_name = name
+        lowest_price = price
 
-    if valor < menor_valor:
-        menor_nome = nome
-        menor_valor = valor
+    if price < lowest_price:
+        lowest_name = name
+        lowest_price = price
 
     while True:
-        resposta = str(input('Você quer continuar [S/N]? ')).upper().strip()   
-        if resposta not in 'SN':
-            print('Resposta inválida. Tente novamente.')
+        answer = str(input('Do you want to continue [Y/N]? ')).upper().strip()
+        if answer not in 'YN':
+            print('Invalid response. Try again.')
             continue
-        if resposta == 'N':
-            print(f'O valor total gasto na compra dos {quantidade_de_produtos} produtos foi R${soma} reais.')
-            print(f'Foram digitados {quantidade_maior_que_1000} produtos que custam mais de R$1000,00.')
-            print(f'O produto mais barato digitado foi o {menor_nome} que custa R${menor_valor} reais.')
+        if answer == 'N':
+            print(f'The total amount spent on the {product_count} products was R${total}.')
+            print(f'{count_over_1000} products cost more than R$1000.00.')
+            print(f'The cheapest product entered was {lowest_name}, costing R${lowest_price}.')
             break
         else:
             break
