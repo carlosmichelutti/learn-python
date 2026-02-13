@@ -1,54 +1,54 @@
-nomes_menor = []
-nomes_maior = []
-auxiliar = []
-grupo = []
-maior = []
-menor = []
-cont = 0
+lowest_names = []
+highest_names = []
+helper = []
+group = []
+highest = []
+lowest = []
+count = 0
 
 while True:
-    nome = str(input('Digite o nome: '))
-    peso = float(input('Digite o peso: '))
-    auxiliar.append(nome)
-    auxiliar.append(peso)
-    grupo.append(auxiliar[:])
-    auxiliar.clear()
-    if cont == 0:
-        maior.append(grupo[cont][1])
-        nomes_maior.append(grupo[cont][0])
-        menor.append(grupo[cont][1])
-        nomes_menor.append(grupo[cont][0])
-        cont += 1
+    name = str(input('Enter the name: '))
+    weight = float(input('Enter the weight: '))
+    helper.append(name)
+    helper.append(weight)
+    group.append(helper[:])
+    helper.clear()
+    if count == 0:
+        highest.append(group[count][1])
+        highest_names.append(group[count][0])
+        lowest.append(group[count][1])
+        lowest_names.append(group[count][0])
+        count += 1
 
-    elif grupo[cont][1] > maior[0]:
-        maior.pop()
-        maior.append(grupo[cont][1])
-        nomes_maior.pop()
-        nomes_maior.append(grupo[cont][0])
-        cont += 1
+    elif group[count][1] > highest[0]:
+        highest.pop()
+        highest.append(group[count][1])
+        highest_names.pop()
+        highest_names.append(group[count][0])
+        count += 1
 
-    elif grupo[cont][1] == maior[0]:
-        nomes_maior.insert(1, grupo[cont][0])
-        cont += 1
+    elif group[count][1] == highest[0]:
+        highest_names.insert(1, group[count][0])
+        count += 1
 
-    elif grupo[cont][1] < menor[0]:
-        menor.pop()
-        menor.append(grupo[cont][1])
-        nomes_menor.pop()
-        nomes_menor.append(grupo[cont][0])
-        cont += 1
+    elif group[count][1] < lowest[0]:
+        lowest.pop()
+        lowest.append(group[count][1])
+        lowest_names.pop()
+        lowest_names.append(group[count][0])
+        count += 1
 
-    elif grupo[cont][1] == menor[0]:
-        nomes_menor.insert(1, grupo[cont][0])
-        cont += 1
+    elif group[count][1] == lowest[0]:
+        lowest_names.insert(1, group[count][0])
+        count += 1
 
-    resposta = str(input('Quer continuar? [S/N]: ')).upper().strip()
-    if resposta == 'N':
-        print(f'Foram cadastradas {len(grupo)} pessoas.')
-        print(f'O maior peso registrado foi de {maior} kg peso de {nomes_maior}.')
-        print(f'O menor peso registrado foi de {menor} kg peso de {nomes_menor}.')
+    answer = str(input('Do you want to continue? [Y/N]: ')).upper().strip()
+    if answer == 'N':
+        print(f'{len(group)} people were registered.')
+        print(f'The highest weight recorded was {highest} kg, belonging to {highest_names}.')
+        print(f'The lowest weight recorded was {lowest} kg, belonging to {lowest_names}.')
         break
 
-    elif resposta != 'S':
-        print('Resposta inválida! Tente novamente:')
-        resposta = str(input('Quer continuar? [S/N]: ')).upper().strip()
+    elif answer != 'Y':
+        print('Invalid response! Try again:')
+        answer = str(input('Do you want to continue? [Y/N]: ')).upper().strip()
