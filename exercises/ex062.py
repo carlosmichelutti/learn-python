@@ -1,27 +1,27 @@
-lista_simples = []
-lista_impares = []
-lista_pares = []
-pos = 0
+simple_list = []
+odd_list = []
+even_list = []
+position = 0
 while True:
-    numero = int(input('Digite um número qualquer: '))
-    lista_simples.append(numero)
-    resposta = str(input('Quer continuar? [S/N]: ')).upper().strip()
-    if resposta == 'N':
+    number = int(input('Enter any number: '))
+    simple_list.append(number)
+    answer = str(input('Do you want to continue? [Y/N]: ')).upper().strip()
+    if answer == 'N':
         while True:
-            if lista_simples[pos] % 2 == 0:
-                lista_pares.append(lista_simples[pos])
-                pos += 1
-            elif lista_simples[pos] % 2 == 1:
-                lista_impares.append(lista_simples[pos])
-                pos += 1
-            if pos == len(lista_simples):
+            if simple_list[position] % 2 == 0:
+                even_list.append(simple_list[position])
+                position += 1
+            elif simple_list[position] % 2 == 1:
+                odd_list.append(simple_list[position])
+                position += 1
+            if position == len(simple_list):
                 break
 
-        print(f'A lista normal digitada foi essa: {lista_simples}.')
-        print(f'A lista dos números ímpares foi essa: {lista_impares}.')
-        print(f'A lista dos números pares foi essa: {lista_pares}.')
+        print(f'The normal list entered was: {simple_list}.')
+        print(f'The list of odd numbers was: {odd_list}.')
+        print(f'The list of even numbers was: {even_list}.')
         break
 
-    elif resposta != 'S':
-        print('Resposta inválida. Tente novamente.')
-        resposta = str(input('Quer continuar? [S/N]: ')).upper().strip()
+    elif answer != 'Y':
+        print('Invalid response. Try again.')
+        answer = str(input('Do you want to continue? [Y/N]: ')).upper().strip()
