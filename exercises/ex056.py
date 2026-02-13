@@ -1,4 +1,4 @@
-brasileirao = (
+brazilian_league = (
     'PALMEIRAS',
     'INTERNACIONAL',
     'FLUMINENSE',
@@ -20,21 +20,21 @@ brasileirao = (
     'JUVENTUDE',
 )
 
-print('Lista de times do brasileirao: ')
-print('\n'.join(brasileirao), end='\n')
+print('List of Brasileirao teams: ')
+print('\n'.join(brazilian_league), end='\n')
 print('')
 
-print('G5')
-print('\n'.join(brasileirao[0:5]))
+print('Top 5')
+print('\n'.join(brazilian_league[0:5]))
 print('')
 
-print('Z4')
-print('\n'.join(brasileirao[15:20]))
+print('Bottom 4')
+print('\n'.join(brazilian_league[15:20]))
 print('')
 
-print('Ordem alfabética')
-print('\n'.join(sorted(brasileirao)))
+print('Alphabetical order')
+print('\n'.join(sorted(brazilian_league)))
 print('')
 
-print(f'O time da SANTOS está na {brasileirao.index('SANTOS')+1}ª posição')
+print(f"SANTOS is in position {brazilian_league.index('SANTOS') + 1}")
 print('')
