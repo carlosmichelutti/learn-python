@@ -1,12 +1,12 @@
-aluno = {}
-aluno['nome'] = str(input('Digite o nome do aluno: ')).capitalize().strip()
-aluno['media'] = float(input(f'Digite a média do aluno {aluno["nome"]}: '))
+student = {}
+student['name'] = str(input('Enter the student name: ')).capitalize().strip()
+student['average'] = float(input(f'Enter the average for student {student["name"]}: '))
 
-if aluno['media'] >= 7.0:
-    aluno['situacao'] = 'APROVADO'
-elif aluno['media'] >= 5:
-    aluno['situacao'] = 'RECUPERAÇÃO'
+if student['average'] >= 7.0:
+    student['status'] = 'APPROVED'
+elif student['average'] >= 5:
+    student['status'] = 'RECOVERY'
 else:
-    aluno['situacao'] = 'REPROVADO'
+    student['status'] = 'FAILED'
 
-print(f'O {aluno["nome"]} tem a média {aluno["media"]} e está {aluno["situacao"]}.')
+print(f'{student["name"]} has an average of {student["average"]} and is {student["status"]}.')
