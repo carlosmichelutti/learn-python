@@ -1,32 +1,32 @@
-numeros_por_extenso = (
+numbers_in_words = (
     'ZERO',
-    'UM',
-    'DOIS',
-    'TRÊS',
-    'QUATRO',
-    'CINCO',
-    'SEIS',
-    'SETE',
-    'OITO',
-    'NOVE',
-    'DEZ',
-    'ONZE',
-    'DOZE',
-    'TREZE',
-    'CATORZE',
-    'QUINZE',
-    'DEZESSEIS',
-    'DEZESSETE',
-    'DEZOITO',
-    'DEZENOVE',
-    'VINTE',
+    'ONE',
+    'TWO',
+    'THREE',
+    'FOUR',
+    'FIVE',
+    'SIX',
+    'SEVEN',
+    'EIGHT',
+    'NINE',
+    'TEN',
+    'ELEVEN',
+    'TWELVE',
+    'THIRTEEN',
+    'FOURTEEN',
+    'FIFTEEN',
+    'SIXTEEN',
+    'SEVENTEEN',
+    'EIGHTEEN',
+    'NINETEEN',
+    'TWENTY',
 )
 
-escolha_usuario = int(input('Escolha um número entre 0 e 20: '))
+user_choice = int(input('Choose a number between 0 and 20: '))
 while True:
-    if escolha_usuario > 20:
-        escolha_usuario = int(input('Número invalido! Escolha um número entre 0 e 20: '))
+    if user_choice > 20:
+        user_choice = int(input('Invalid number! Choose a number between 0 and 20: '))
     else:
         break
 
-print(f'O número que você escolheu por extenso foi o número {escolha_usuario} = {numeros_por_extenso[escolha_usuario]}.')
+print(f'The number you chose in words was {user_choice} = {numbers_in_words[user_choice]}.')
