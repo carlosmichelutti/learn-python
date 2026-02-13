@@ -1,36 +1,36 @@
 import os
 
-pessoas_maior_de_idade = 0
-quantidade_mulheres = 0
-quantidade_homens = 0
-resposta = 'S'
+people_over_18 = 0
+women_count = 0
+men_count = 0
+answer = 'Y'
 
-while resposta == 'S':
-    idade = int(input('Quantos anos você tem? '))
-    while True: 
-        sexo = str(input('Qual é o seu sexo [M/F]? ')).upper().strip()
-        if sexo not in 'MF':
-            print('Opção invalida! Tente novamente.')
+while answer == 'Y':
+    age = int(input('How old are you? '))
+    while True:
+        gender = str(input('What is your gender [M/F]? ')).upper().strip()
+        if gender not in 'MF':
+            print('Invalid option! Try again.')
             continue
         break
 
-    if idade > 18:
-        pessoas_maior_de_idade += 1
-    if sexo == 'M':
-        quantidade_homens += 1
-    if sexo == 'F':
-        quantidade_mulheres += 1
+    if age > 18:
+        people_over_18 += 1
+    if gender == 'M':
+        men_count += 1
+    if gender == 'F':
+        women_count += 1
 
     while True:
-        resposta = str(input('Você quer continuar [S/N]? ')).upper().strip()
-        if resposta not in 'SN':
-            print('Opção invalida! Tente novamente.')
+        answer = str(input('Do you want to continue [Y/N]? ')).upper().strip()
+        if answer not in 'YN':
+            print('Invalid option! Try again.')
             continue
-        if resposta == 'N':
+        if answer == 'N':
             os.system('cls')
-            print(f'Foram digitados {pessoas_maior_de_idade} homens com mais de 18 anos.')
-            print(f'Foram digitados {quantidade_mulheres} mulheres.')
-            print(f'Foram digitados {quantidade_homens} homens.')
+            print(f'{people_over_18} men over 18 years old were entered.')
+            print(f'{women_count} women were entered.')
+            print(f'{men_count} men were entered.')
             break
 
         os.system('cls')
