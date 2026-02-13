@@ -1,30 +1,30 @@
-quantidade_numeros = 0
-maior_numero = 0
-menor_numero = 0
-resposta = 'S'
-soma = 0
+number_count = 0
+largest_number = 0
+smallest_number = 0
+answer = 'S'
+total = 0
 
-while resposta == 'S':
-    numero = int(input('Digite um número inteiro qualquer: '))
-    quantidade_numeros += 1
-    soma += numero
+while answer == 'S':
+    number = int(input('Enter any integer: '))
+    number_count += 1
+    total += number
 
-    if quantidade_numeros == 1:
-        maior_numero = numero
-        menor_numero = numero
-    if numero > maior_numero:
-        maior_numero = numero
-    elif numero < menor_numero:
-        menor_numero = numero
+    if number_count == 1:
+        largest_number = number
+        smallest_number = number
+    if number > largest_number:
+        largest_number = number
+    elif number < smallest_number:
+        smallest_number = number
 
-    resposta =  str(input('Quer continuar? [S/N] ')).upper().strip()
+    answer =  str(input('Do you want to continue? [Y/N] ')).upper().strip()
     while True:
-        if resposta not in 'SN':
-            print('Opção inválida! Tente novamente!')
-            resposta = str(input('Quer continuar? [S/N] ')).upper().strip()
+        if answer not in 'YN':
+            print('Invalid option! Try again!')
+            answer = str(input('Do you want to continue? [Y/N] ')).upper().strip()
             continue
         break
 
-print(f'A média de todos os {quantidade_numeros} números digitados é igual a {soma/quantidade_numeros}.')
-print(f'O maior número digitado foi o número {maior_numero}.')
-print(f'O menor valor digitado foi o número {menor_numero}.')
+print(f'The average of all {number_count} numbers entered is {total / number_count}.')
+print(f'The largest number entered was {largest_number}.')
+print(f'The smallest number entered was {smallest_number}.')
