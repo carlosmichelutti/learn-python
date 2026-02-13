@@ -1,18 +1,18 @@
-quantidade_numeros = 0
-lista = []
+number_count = 0
+numbers = []
 while True:
-    numero = int(input('Digite um número qualquer: '))
-    lista.append(numero)
-    quantidade_numeros += 1
-    resposta = str(input('Quer continuar? [S/N]: ')).upper().strip()
+    number = int(input('Enter any number: '))
+    numbers.append(number)
+    number_count += 1
+    answer = str(input('Do you want to continue? [Y/N]: ')).upper().strip()
 
-    if resposta == 'N':
+    if answer == 'N':
         print('')
-        print(f'Foram digitados {quantidade_numeros} números.')
-        lista.sort(reverse=True)
-        print(f'A lista em ordem decrescente é igual a {lista}.')
+        print(f'{number_count} numbers were entered.')
+        numbers.sort(reverse=True)
+        print(f'The list in descending order is {numbers}.')
         break
 
-    elif resposta != 'S':
-        print('Resposta inválida. Tente novamente')
-        resposta = str(input('Quer continuar? [S/N]: ')).upper().strip()
+    elif answer != 'Y':
+        print('Invalid response. Try again')
+        answer = str(input('Do you want to continue? [Y/N]: ')).upper().strip()
