@@ -1,10 +1,10 @@
 number_count = 0
 largest_number = 0
 smallest_number = 0
-answer = 'S'
+answer = 'Y'
 total = 0
 
-while answer == 'S':
+while answer == 'Y':
     number = int(input('Enter any integer: '))
     number_count += 1
     total += number
