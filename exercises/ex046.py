@@ -4,7 +4,7 @@ print('Let\'s play? I will think of a number from 1 to 10 and you try to guess i
 user_guess = 0
 computer_number = randint(1, 10)
 print('I picked a number from 1 to 10, try to guess it now!')
-attempt_count = 0
+attempt_count = 1
 
 while computer_number != user_guess:
     user_guess = int(input('What number did I pick? '))
