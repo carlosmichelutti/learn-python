@@ -40,5 +40,4 @@ while True:
         continue
 
     if condition == 5:
-        print('END')
         break
