@@ -1,18 +1,18 @@
 from random import randint
 
-def sortear_numeros():
-    numeros = []
+def generate_numbers():
+    numbers = []
     for _ in range(0, 5):
-        numeros.append(int(randint(1, 10)))
-    return numeros
+        numbers.append(int(randint(1, 10)))
+    return numbers
 
-def somar_numeros(numeros: list):
+def sum_numbers(numbers: list):
     total = 0
-    for numero in numeros:
-        total += numero
+    for number in numbers:
+        total += number
     return total
 
-numeros = sortear_numeros()
-total = somar_numeros(numeros)
+numbers = generate_numbers()
+total = sum_numbers(numbers)
 
-print(f'A soma dos números {numeros} é igual a {total}.')
+print(f'The sum of the numbers {numbers} is {total}.')
