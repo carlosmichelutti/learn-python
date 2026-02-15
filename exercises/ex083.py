@@ -1,21 +1,21 @@
 from functools import reduce
 from random import randint
 
-def soma_sem_lambda(numeros: list[int]) -> int:
-    soma = sum(numeros)
-    return soma
+def sum_without_lambda(numbers: list[int]) -> int:
+    total = sum(numbers)
+    return total
 
-lista_aleatoria = [randint(1, 10) for _ in range(randint(5, 10))]
-soma_sem_lambda(numeros=lista_aleatoria)
-soma_com_lambda = reduce(lambda num1, num2: num1 + num2, lista_aleatoria, 0)
+random_list = [randint(1, 10) for _ in range(randint(5, 10))]
+sum_without_lambda(numbers=random_list)
+sum_with_lambda = reduce(lambda num1, num2: num1 + num2, random_list, 0)
 
-lista_impares = list(filter(lambda numero: numero % 2 != 0 , lista_aleatoria))
-lista_pares = list(filter(lambda numero: numero % 2 == 0, lista_aleatoria))
-lista_potencia = list(map(lambda numero: numero**2, lista_aleatoria))
+odd_list = list(filter(lambda number: number % 2 != 0 , random_list))
+even_list = list(filter(lambda number: number % 2 == 0, random_list))
+squared_list = list(map(lambda number: number**2, random_list))
 
-print(f'Lista aleatória: {lista_aleatoria}')
-print(f'Soma sem lambda: {soma_sem_lambda(numeros=lista_aleatoria)}')
-print(f'Soma com lambda: {soma_com_lambda}')
-print(f'Lista de ímpares: {lista_impares}')
-print(f'Lista de pares: {lista_pares}')
-print(f'Lista ao quadrado: {lista_potencia}')
+print(f'Random list: {random_list}')
+print(f'Sum without lambda: {sum_without_lambda(numbers=random_list)}')
+print(f'Sum with lambda: {sum_with_lambda}')
+print(f'Odd list: {odd_list}')
+print(f'Even list: {even_list}')
+print(f'Squared list: {squared_list}')
