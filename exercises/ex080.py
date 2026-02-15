@@ -1,17 +1,17 @@
 from random import randint
 
-pessoas = [
-    {'nome': 'Mariana','idade': randint(10, 99)},
-    {'nome': 'Carlos', 'idade': randint(10, 99)},
-    {'nome': 'Arthur', 'idade': randint(10, 99)},
-    {'nome': 'Rebeca', 'idade': randint(10, 99)},
-    {'nome': 'Rodolfo', 'idade': randint(10, 99)},
-    {'nome': 'Maria', 'idade': randint(10, 99)}
+people = [
+    {'name': 'Mariana', 'age': randint(10, 99)},
+    {'name': 'Carlos', 'age': randint(10, 99)},
+    {'name': 'Arthur', 'age': randint(10, 99)},
+    {'name': 'Rebeca', 'age': randint(10, 99)},
+    {'name': 'Rodolfo', 'age': randint(10, 99)},
+    {'name': 'Maria', 'age': randint(10, 99)}
 ]
 
-nomes_com_mais_de_seis_caracteres = list(filter(lambda pessoa: len(pessoa['nome']) > 6, pessoas))
-menores_de_idade = list(filter(lambda pessoa: pessoa['idade'] < 18, pessoas))
-maiores_de_idade = list(filter(lambda pessoa: pessoa['idade'] > 18, pessoas))
-print(f'Nomes com mais de 6 caracteres: {list(map(lambda pessoa: pessoa["nome"], nomes_com_mais_de_seis_caracteres))}')
-print(f'Menores de idade: {list(map(lambda pessoa: pessoa["nome"], menores_de_idade))}')
-print(f'Maiores de idade: {list(map(lambda pessoa: pessoa["nome"], maiores_de_idade))}')
+names_with_more_than_six_characters = list(filter(lambda person: len(person['name']) > 6, people))
+minors = list(filter(lambda person: person['age'] < 18, people))
+adults = list(filter(lambda person: person['age'] > 18, people))
+print(f'Names with more than 6 characters: {list(map(lambda person: person["name"], names_with_more_than_six_characters))}')
+print(f'Minors: {list(map(lambda person: person["name"], minors))}')
+print(f'Adults: {list(map(lambda person: person["name"], adults))}')
