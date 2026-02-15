@@ -1,8 +1,8 @@
 from calendar import mdays, month_name
 import locale
 
-locale.setlocale(locale.LC_ALL, 'pt_BR')
+locale.setlocale(locale.LC_ALL, 'en_US')
 
-meses_com_31 = list(map(lambda indice: month_name[indice] if mdays[indice] == 31 else None, range(1, 13)))
-meses_com_31 = list(filter(lambda nome_do_mes: nome_do_mes is not None, meses_com_31))
-print('Meses com 31 dias:', *[mes.capitalize() for mes in  meses_com_31], sep='\n    * ')
+months_with_31 = list(map(lambda index: month_name[index] if mdays[index] == 31 else None, range(1, 13)))
+months_with_31 = list(filter(lambda month_name_item: month_name_item is not None, months_with_31))
+print('Months with 31 days:', *[month.capitalize() for month in months_with_31], sep='\n    * ')
