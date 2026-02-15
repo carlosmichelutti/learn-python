@@ -1,16 +1,16 @@
-jogador = {
-    'Nome do Jogador': str(input('Qual o nome do jogador? ')).lower().strip(),
-    'Total de Gols': 0,
-    'Jogos': []
+player = {
+    'Player Name': str(input('What is the player name? ')).lower().strip(),
+    'Total Goals': 0,
+    'Matches': []
 }
-partidas = int(input(f'Quantas partidas o jogador {jogador["Nome do Jogador"]} jogou? '))
+matches = int(input(f'How many matches did player {player["Player Name"]} play? '))
 
-for jogo in range(0, partidas):
-    gols = int(input(f'Quantos gols o jogador {jogador["Nome do Jogador"]} fez na {jogo+1}ª partida? '))
-    jogador['Jogos'].append({'partida': jogo+1, 'gols': gols})
-    jogador['Total de Gols'] += gols
+for match in range(0, matches):
+    goals = int(input(f'How many goals did player {player["Player Name"]} score in match {match + 1}? '))
+    player['Matches'].append({'match': match + 1, 'goals': goals})
+    player['Total Goals'] += goals
 
-print(f'O jogador {jogador["Nome do Jogador"]} jogou {partidas} partidas.')
+print(f'Player {player["Player Name"]} played {matches} matches.')
 
-for partida in range(0, partidas):
-    print(f'\t=> Na partida {partida+1}, o jogador {jogador["Nome do Jogador"]} fez {jogador["Jogos"][partida]["gols"]} gols.')
+for match in range(0, matches):
+    print(f'=> In match {match + 1}, player {player["Player Name"]} scored {player["Matches"][match]["goals"]} goals.')
