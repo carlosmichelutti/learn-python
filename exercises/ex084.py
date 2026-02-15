@@ -1,12 +1,12 @@
-def cores_do_arco_iris():
-    yield 'vermelho'
-    yield 'laranja'
-    yield 'amarelo'
-    yield 'verde'
-    yield 'azul'
-    yield 'índido'
-    yield 'violeta'
+def rainbow_colors():
+    yield 'red'
+    yield 'orange'
+    yield 'yellow'
+    yield 'green'
+    yield 'blue'
+    yield 'indigo'
+    yield 'violet'
 
-generator = cores_do_arco_iris()
+generator = rainbow_colors()
 while True:
     print(next(generator))
