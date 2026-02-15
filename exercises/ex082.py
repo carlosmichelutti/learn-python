@@ -1,16 +1,16 @@
 from functools import reduce
 from random import randint
 
-produtos = [
-    {'nome': 'Monitor', 'quantidade': randint(1, 100), 'preco': randint(1, 100)},
-    {'nome': 'Teclado', 'quantidade': randint(1, 100), 'preco': randint(1, 100)},
-    {'nome': 'Mouse', 'quantidade': randint(1, 100), 'preco': randint(1, 100)},
+products = [
+    {'name': 'Monitor', 'quantity': randint(1, 100), 'price': randint(1, 100)},
+    {'name': 'Keyboard', 'quantity': randint(1, 100), 'price': randint(1, 100)},
+    {'name': 'Mouse', 'quantity': randint(1, 100), 'price': randint(1, 100)},
 ]
 
-valor_total_produtos = list(map(lambda produto: {'nome': produto['nome'], 'total': produto['quantidade'] * produto['preco']}, produtos))
-valores = list(map(lambda produto: produto['total'], valor_total_produtos))
-valor_total = reduce(lambda valor_total, valor: valor_total + valor, valores, 0)
-frases = map(lambda produto: f'    * O produto {produto["nome"]} tem R${produto["total"]} reais investidos.', valor_total_produtos)
+total_product_values = list(map(lambda product: {'name': product['name'], 'total': product['quantity'] * product['price']}, products))
+values = list(map(lambda product: product['total'], total_product_values))
+total_value = reduce(lambda total, value: total + value, values, 0)
+sentences = map(lambda product: f'    * The product {product["name"]} has ${product["total"]} invested.', total_product_values)
 
-print(*list(frases), sep='\n')
-print(f'    * Valor total investido: R${valor_total} reais.')
+print(*list(sentences), sep='\n')
+print(f'    * Total value invested: ${total_value}.')
