@@ -1,16 +1,16 @@
 from datetime import datetime
 
-def verificar_obrigatoriedade_voto(ano_nascimento: int):
+def check_voting_requirement(birth_year: int):
 
-    if (datetime.today().year - ano_nascimento) < 16:
-        print(f'Com {datetime.today().year - ano_nascimento} anos: voto negado.')
+    if (datetime.today().year - birth_year) < 16:
+        print(f'At {datetime.today().year - birth_year} years old: voting denied.')
         return
-    elif (datetime.today().year - ano_nascimento) >= 18 and (datetime.today().year - ano_nascimento) <= 65:
-        print(f'Com {datetime.today().year - ano_nascimento} anos: voto obrigatório.')
+    elif (datetime.today().year - birth_year) >= 18 and (datetime.today().year - birth_year) <= 65:
+        print(f'At {datetime.today().year - birth_year} years old: voting mandatory.')
         return
     else:
-        print(f'Com {datetime.today().year - ano_nascimento} anos: voto opcional.')
+        print(f'At {datetime.today().year - birth_year} years old: voting optional.')
         return
         
-ano_nascimento = int(input('Qual o seu ano de nascimento? '))
-verificar_obrigatoriedade_voto(ano_nascimento)
+birth_year = int(input('What is your birth year? '))
+check_voting_requirement(birth_year)
