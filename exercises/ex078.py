@@ -1,34 +1,34 @@
-def notas(*num, show=False):
+def grades(*scores, show=False):
 
-    media = 0
-    notas = {}
-    notas['quantidade_provas'] = len(num)
-    notas['maior_nota'] = 0
-    notas['menor_nota'] = 0
-    notas['media'] = 0
+    average = 0
+    grade_data = {}
+    grade_data['number_of_tests'] = len(scores)
+    grade_data['highest_grade'] = 0
+    grade_data['lowest_grade'] = 0
+    grade_data['average'] = 0
 
-    for nota in num:
-        media += nota
-        if notas['maior_nota'] == 0 and notas['menor_nota'] == 0:
-            notas['maior_nota'] = nota
-            notas['menor_nota'] = nota
-        elif nota > notas['maior_nota']:
-            notas['maior_nota'] = nota
-        elif nota < notas['menor_nota']:
-            notas['menor_nota'] = nota
+    for grade in scores:
+        average += grade
+        if grade_data['highest_grade'] == 0 and grade_data['lowest_grade'] == 0:
+            grade_data['highest_grade'] = grade
+            grade_data['lowest_grade'] = grade
+        elif grade > grade_data['highest_grade']:
+            grade_data['highest_grade'] = grade
+        elif grade < grade_data['lowest_grade']:
+            grade_data['lowest_grade'] = grade
 
-    media = media/len(num)
-    notas['media'] = media
+    average = average / len(scores)
+    grade_data['average'] = average
 
     if show:
-        if notas['media'] > 7:
-            notas['Situação'] = 'BOA'
-        elif notas['media'] > 5:
-            notas['Situação'] = 'RAZOÁVEL'
+        if grade_data['average'] > 7:
+            grade_data['Status'] = 'GOOD'
+        elif grade_data['average'] > 5:
+            grade_data['Status'] = 'FAIR'
         else:
-            notas['Situação'] = 'RUIM'
-        print(notas)
+            grade_data['Status'] = 'POOR'
+        print(grade_data)
     else:
-        print(notas)
+        print(grade_data)
 
-notas = notas(9, 4.5, 10, 7, show=True)
+result = grades(9, 4.5, 10, 7, show=True)
