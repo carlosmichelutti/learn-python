@@ -1,15 +1,15 @@
-def contar_numeros(inicio: int, fim: int, passo: int):
-    if inicio > fim:
-        fim -= 1
+def count_numbers(start: int, end: int, step: int):
+    if start > end:
+        end -= 1
     else:
-        fim += 1
-    for numero in range(inicio, fim, passo):
-        print(numero, end=' - ')
+        end += 1
+    for number in range(start, end, step):
+        print(number, end=' - ')
     print('')
 
-contar_numeros(inicio=1, fim=10, passo=1)
-contar_numeros(inicio=10, fim=0, passo=-2)
-inicio = int(input('Inicio: '))
-fim = int(input('Fim: '))
-passo = int(input('Passo: '))
-contar_numeros(inicio=inicio, fim=fim, passo=passo)
+count_numbers(start=1, end=10, step=1)
+count_numbers(start=10, end=0, step=-2)
+start = int(input('Start: '))
+end = int(input('End: '))
+step = int(input('Step: '))
+count_numbers(start=start, end=end, step=step)
