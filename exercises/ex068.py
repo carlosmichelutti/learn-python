@@ -1,7 +1,7 @@
 from random import randint
 from time import sleep
 
-print('================= MEGA SENA DA VIRADA =================')
+print('======================= Lottery =======================')
 print('=======================================================')
 game_count = int(input('How many games do you want to play? '))
 
