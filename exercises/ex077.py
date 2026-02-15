@@ -1,10 +1,10 @@
-def verificar_inteiro():
+def validate_integer():
     while True:
-        numero = str(input('Digite um número: '))
-        if numero.isnumeric():
-            return int(numero)
+        number = str(input('Enter a number: '))
+        if number.isnumeric():
+            return int(number)
         else:
-            print(f'Erro! O valor digitado {numero} não é um número inteiro válido.')
+            print(f'Error! The value {number} is not a valid integer.')
 
-numero = verificar_inteiro()
-print(f'Você acabou de digitar o número {numero}.')
+number = validate_integer()
+print(f'You just entered the number {number}.')
