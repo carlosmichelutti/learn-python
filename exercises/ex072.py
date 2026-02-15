@@ -1,8 +1,8 @@
-def calcular_area(largura: int, comprimento: int):
-    calculo = largura * comprimento
-    print(f'A área de um terreno de {largura}x{comprimento} é igual a {calculo}m².')
+def calculate_area(width: int, length: int):
+    area = width * length
+    print(f'The area of a plot of land {width}x{length} is {area}m².')
 
-largura = int(input('Digite a largura do terreno: '))
-comprimento = int(input('Digite o cumprimento do terreno: '))
+width = int(input('Enter the width of the plot: '))
+length = int(input('Enter the length of the plot: '))
 
-calcular_area(largura=largura, comprimento=comprimento)
+calculate_area(width=width, length=length)
