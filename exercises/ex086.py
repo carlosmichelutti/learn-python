@@ -1,8 +1,8 @@
 from random import randint
 
-def mapear(function, list):
-    for elemento in list:
-        yield function(elemento)
+def map_function(function, items):
+    for element in items:
+        yield function(element)
 
-print(list(mapear(lambda x: x ** 2, [randint(1, 10) for _ in range(randint(1, 10))])))
-print(list(mapear(lambda x: x * 2, [randint(1, 10) for _ in range(randint(1, 10))])))
+print(list(map_function(lambda x: x ** 2, [randint(1, 10) for _ in range(randint(1, 10))])))
+print(list(map_function(lambda x: x * 2, [randint(1, 10) for _ in range(randint(1, 10))])))
