@@ -8,7 +8,7 @@ total = 0
 
 while answer != 'N':
     name = str(input('What is the product name? '))
-    price = float(input('What is the product price? R$'))
+    price = float(input('What is the product price? $'))
     product_count += 1
     total += price
 
@@ -29,9 +29,9 @@ while answer != 'N':
             print('Invalid response. Try again.')
             continue
         if answer == 'N':
-            print(f'The total amount spent on the {product_count} products was R${total}.')
-            print(f'{count_over_1000} products cost more than R$1000.00.')
-            print(f'The cheapest product entered was {lowest_name}, costing R${lowest_price}.')
+            print(f'The total amount spent on the {product_count} products was ${total}.')
+            print(f'{count_over_1000} products cost more than $1000.00.')
+            print(f'The cheapest product entered was {lowest_name}, costing ${lowest_price}.')
             break
         else:
             break
