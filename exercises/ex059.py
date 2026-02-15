@@ -17,10 +17,10 @@ for num in range(0, 5):
 
 print(f'Numbers: {numbers}')
 print(
-    f"The lowest number entered was {lowest_number} at positions "
-    f"{', '.join(str(i) for i, v in enumerate(numbers) if v == lowest_number)}"
+    f'The lowest number entered was {lowest_number} at positions '
+    f'{", ".join(str(i) for i, v in enumerate(numbers) if v == lowest_number)}'
 )
 print(
-    f"The highest number entered was {highest_number} at positions "
-    f"{', '.join(str(i) for i, v in enumerate(numbers) if v == highest_number)}"
+    f'The highest number entered was {highest_number} at positions '
+    f'{", ".join(str(i) for i, v in enumerate(numbers) if v == highest_number)}'
 )
