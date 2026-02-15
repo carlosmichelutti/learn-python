@@ -1,13 +1,13 @@
 from random import randint
 
-pessoas = [
-    {'nome': 'Carlos', 'idade': randint(10, 99)},
-    {'nome': 'Felipe', 'idade': randint(10, 99)},
-    {'nome': 'Marcos', 'idade': randint(10, 99)},
+people = [
+    {'name': 'Carlos', 'age': randint(10, 99)},
+    {'name': 'Felipe', 'age': randint(10, 99)},
+    {'name': 'Marcos', 'age': randint(10, 99)},
 ]
 
-idades = list(map(lambda pessoa: pessoa['idade'], pessoas))
-nomes = list(map(lambda pessoa: pessoa['nome'], pessoas))
+ages = list(map(lambda person: person['age'], people))
+names = list(map(lambda person: person['name'], people))
 
-frases = map(lambda nome, idade: f'{nome} tem {idade} anos', nomes, idades)
-print(*list(frases), sep=', ', end='.\n')
+sentences = map(lambda name, age: f'{name} is {age} years old', names, ages)
+print(*list(sentences), sep=', ', end='.\n')
