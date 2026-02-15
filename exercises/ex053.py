@@ -1,5 +1,5 @@
 print('=' * 50)
-print('{:^50}'.format('Banco do Brasil'))
+print('{:^50}'.format('Bank'))
 print('=' * 50)
 
 notes_50 = 0
@@ -7,7 +7,7 @@ notes_20 = 0
 notes_10 = 0
 notes_1 = 0
 
-withdrawal = float(input('How much do you want to withdraw? '))
+withdrawal = float(input('How much do you want to withdraw? $'))
 
 while True:
     if withdrawal > 49:
